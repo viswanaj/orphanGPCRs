@@ -1,0 +1,8 @@
+requests>=2.31.0,<3
+biopython>=1.83,<2
+matplotlib>=3.8,<4
+# Additional dependencies for MAFFT and MUSCLE alignment scripts
+# Note: MAFFT and MUSCLE executables must be installed separately
+# MAFFT: https://mafft.cbrc.jp/alignment/software/
+# MUSCLE: https://www.drive5.com/muscle/
+# PhyML (optional): http://www.atgc-montpellier.fr/phyml/
