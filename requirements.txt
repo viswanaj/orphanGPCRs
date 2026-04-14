@@ -1,6 +1,15 @@
 requests>=2.31.0,<3
 biopython>=1.83,<2
 matplotlib>=3.8,<4
+pandas>=2.0,<3
+
+# TxGemma scaffold generation (scripts/generate_scaffolds_txgemma.py)
+transformers>=4.45.0
+accelerate>=0.34.0
+huggingface_hub>=0.25.0
+bitsandbytes>=0.44.0
+torch>=2.0
+
 # Additional dependencies for MAFFT and MUSCLE alignment scripts
 # Note: MAFFT and MUSCLE executables must be installed separately
 # MAFFT: https://mafft.cbrc.jp/alignment/software/
