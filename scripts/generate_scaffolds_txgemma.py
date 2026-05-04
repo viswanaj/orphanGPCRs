@@ -78,19 +78,39 @@ def build_scaffold_prompt(gene: str) -> str:
     )
 
 
+def _best_device() -> str:
+    import torch
+    if torch.cuda.is_available():
+        return "cuda"
+    if torch.backends.mps.is_available():
+        return "mps"
+    return "cpu"
+
+
 def load_model(model_id: str, hf_token: Optional[str], quantize_4bit: bool):
     """Load TxGemma-Chat model and tokenizer from Hugging Face."""
+    import torch
     from transformers import AutoTokenizer, AutoModelForCausalLM
 
-    kwargs = {"device_map": "auto", "token": hf_token}
+    device = _best_device()
+    print(f"Using device: {device}")
+
+    if quantize_4bit and device != "cuda":
+        print("WARNING: 4-bit quantisation requires CUDA; falling back to bfloat16.")
+        quantize_4bit = False
+
+    kwargs: dict = {"token": hf_token, "torch_dtype": torch.bfloat16}
 
     if quantize_4bit:
         from transformers import BitsAndBytesConfig
-        import torch
+        kwargs["device_map"] = "auto"
         kwargs["quantization_config"] = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.bfloat16,
         )
+    else:
+        # device_map={"": device} loads all layers onto one device cleanly
+        kwargs["device_map"] = {"": device}
 
     print(f"Loading tokenizer from {model_id}...")
     tokenizer = AutoTokenizer.from_pretrained(model_id, token=hf_token)
@@ -109,7 +129,7 @@ def chat_generate(model, tokenizer, messages: List[dict],
     input_text = tokenizer.apply_chat_template(
         messages, tokenize=False, add_generation_prompt=True
     )
-    inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+    inputs = tokenizer(input_text, return_tensors="pt", add_special_tokens=False).to(model.device)
 
     with torch.no_grad():
         output_ids = model.generate(
@@ -118,6 +138,7 @@ def chat_generate(model, tokenizer, messages: List[dict],
             do_sample=True,
             temperature=0.7,
             top_p=0.9,
+            pad_token_id=tokenizer.eos_token_id,
         )
 
     new_tokens = output_ids[0][inputs["input_ids"].shape[1]:]
@@ -132,7 +153,7 @@ def process_gene(model, tokenizer, gene_data: dict,
     brain_regions = gene_data.get("top_enriched_structures", "")
     z_scores = gene_data.get("z_scores", "")
 
-    messages = [{"role": "user", "content": SYSTEM_PROMPT}]
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
 
     # Turn 1: structural analysis
     analysis_prompt = build_analysis_prompt(gene, sequence, brain_regions, z_scores)
