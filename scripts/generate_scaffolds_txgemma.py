@@ -99,7 +99,7 @@ def load_model(model_id: str, hf_token: Optional[str], quantize_4bit: bool):
         print("WARNING: 4-bit quantisation requires CUDA; falling back to bfloat16.")
         quantize_4bit = False
 
-    kwargs: dict = {"token": hf_token, "torch_dtype": torch.bfloat16}
+    kwargs: dict = {"token": hf_token, "dtype": torch.bfloat16}
 
     if quantize_4bit:
         from transformers import BitsAndBytesConfig

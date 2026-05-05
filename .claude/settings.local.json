@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{print $5, $6, $7, $8}')",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{time_total}s\\\\n\" --max-time 10 \"https://huggingface.co\")",
+      "Bash(awk '{print $5, $6, $7, $8, $9}')",
+      "Bash(sort -k3,3 -k4,4)",
+      "Bash(awk '{print $2, $3, $11, $12}')"
+    ]
+  }
+}
