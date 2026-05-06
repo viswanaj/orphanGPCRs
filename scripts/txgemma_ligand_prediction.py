@@ -67,7 +67,7 @@ VALIDATION_TARGETS = {
 MODEL_NAME  = "google/txgemma-2b-predict"
 N_ACTIVE    = 75    # top actives per receptor (pChEMBL ≥ 6)
 N_INACTIVE  = 75    # bottom inactives per receptor (pChEMBL ≤ 5)
-BATCH_SIZE  = 4
+BATCH_SIZE  = 1   # MPS batch generation bug: only item[0] generates; run one at a time
 MAX_SEQ_LEN = 512   # truncate sequences longer than this
 MAX_NEW_TOKENS = 16
 
@@ -244,16 +244,36 @@ def format_prompt(smiles: str, sequence: str) -> str:
 
 
 def _parse_float(text: str) -> float | None:
-    """Extract the first float from generated text."""
-    # Strip everything before "Answer:" if present
+    """
+    Extract the first positive number from generated text.
+    txGemma-predict outputs raw nM values (TDC BindingDB_Ki scale),
+    so we accept any positive float and convert to pKi later.
+    """
     if "Answer:" in text:
         text = text.split("Answer:")[-1]
-    matches = re.findall(r"-?\d+(?:\.\d+)?", text)
-    if matches:
-        val = float(matches[0])
-        if 0.0 <= val <= 15.0:   # plausible pKi range
+    matches = re.findall(r"\d+(?:\.\d+)?(?:[eE][+-]?\d+)?", text)
+    for m in matches:
+        val = float(m)
+        if val > 0:
             return val
     return None
+
+
+def nm_to_pki(val: float) -> float:
+    """Convert nM affinity to pKi (−log10 Molar)."""
+    return 9.0 - np.log10(val)
+
+
+def normalize_to_pki(raw_values: list[float]) -> tuple[list[float], str]:
+    """
+    Auto-detect whether model output is already pKi or raw nM.
+    Heuristic: if median > 50, almost certainly nM scale.
+    Returns (converted_values, scale_label).
+    """
+    median = float(np.median(raw_values))
+    if median > 50:
+        return [nm_to_pki(v) for v in raw_values], "nM→pKi"
+    return raw_values, "pKi (direct)"
 
 
 def batch_predict(
@@ -329,7 +349,7 @@ def compute_metrics(actual: list[float], predicted: list[float]) -> dict:
 def build_report(result_rows: list[dict]) -> go.Figure:
     """4-panel HTML report: scatter + ROC per receptor, grouped."""
     receptors = list(dict.fromkeys(r["receptor"] for r in result_rows))
-    n = len(receptors)
+    n = max(len(receptors), 1)
 
     fig = make_subplots(
         rows=2, cols=n,
@@ -383,8 +403,9 @@ def build_report(result_rows: list[dict]) -> go.Figure:
         ), row=1, col=col)
 
         # Annotation
+        suffix = "" if col == 1 else str(col)
         fig.add_annotation(
-            xref=f"x{col} domain", yref=f"y{col} domain",
+            xref=f"x{suffix} domain", yref=f"y{suffix} domain",
             x=0.05, y=0.95, xanchor="left", yanchor="top",
             text=(f"R={m['pearson_r']}  ρ={m['spearman_r']}<br>"
                   f"RMSE={m['rmse']}  AUC={m['auc_roc']}<br>"
@@ -472,21 +493,40 @@ def main() -> None:
     print("\n── Phase 3: Running predictions ──")
     predictions = batch_predict(model, tokenizer, device, ligand_rows)
 
-    # Attach predictions; skip rows where parsing failed
-    result_rows = []
+    # Attach raw predictions; skip rows where parsing failed
+    raw_parsed = []
     n_failed = 0
     for row, pred in zip(ligand_rows, predictions):
         if pred is None:
             n_failed += 1
             continue
-        result_rows.append({**row, "predicted_pki": pred})
+        raw_parsed.append({**row, "_raw_pred": pred})
 
-    print(f"  {len(result_rows)} predictions parsed  ({n_failed} unparseable)")
+    print(f"  {len(raw_parsed)} predictions parsed  ({n_failed} unparseable)")
+
+    if not raw_parsed:
+        print("  ERROR: no parseable predictions. Check model output format.")
+        return
+
+    # Auto-detect scale (nM vs pKi) and normalise to pKi
+    raw_vals = [r["_raw_pred"] for r in raw_parsed]
+    converted, scale_label = normalize_to_pki(raw_vals)
+    print(f"  Scale detected: {scale_label}  "
+          f"(raw median={float(np.median(raw_vals)):.1f})")
+
+    result_rows = []
+    for row, pki in zip(raw_parsed, converted):
+        result_rows.append({
+            **{k: v for k, v in row.items() if k != "_raw_pred"},
+            "raw_model_output": row["_raw_pred"],
+            "predicted_pki": pki,
+        })
 
     with open(PREDS_CSV, "w", newline="") as f:
         fields = [
             "receptor", "gpcr_class", "uniprot", "molecule_id",
-            "smiles", "pchembl_value", "assay_type", "predicted_pki",
+            "smiles", "pchembl_value", "assay_type",
+            "raw_model_output", "predicted_pki",
         ]
         writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()
@@ -508,6 +548,10 @@ def main() -> None:
             f"{rec:10s}  {m['pearson_r']:>6.3f}  {m['spearman_r']:>6.3f}  "
             f"{m['rmse']:>6.3f}  {m['auc_roc']:>6.3f}  {m['n']}"
         )
+
+    if not result_rows:
+        print("  No results to plot.")
+        return
 
     fig = build_report(result_rows)
     fig.write_html(str(REPORT_HTML))
