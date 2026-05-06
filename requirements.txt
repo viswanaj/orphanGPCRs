@@ -1,6 +1,17 @@
 requests>=2.31.0,<3
 biopython>=1.83,<2
 matplotlib>=3.8,<4
+parasail>=1.3
+umap-learn>=0.5
+hdbscan>=0.8
+plotly>=5.0
+tqdm>=4.0
+numpy>=1.24
+torch>=2.0
+transformers>=4.40
+scikit-learn>=1.3
+scipy>=1.10
+huggingface_hub>=0.20
 # Additional dependencies for MAFFT and MUSCLE alignment scripts
 # Note: MAFFT and MUSCLE executables must be installed separately
 # MAFFT: https://mafft.cbrc.jp/alignment/software/
