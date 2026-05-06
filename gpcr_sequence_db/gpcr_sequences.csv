@@ -1,0 +1,841 @@
+uniprot_accession,uniprot_id,gene_name,protein_name,organism,sequence_length,uniprot_orphan_status,uniprot_ligand_info,iuphar_target_id,iuphar_name,iuphar_is_orphan,consensus_status,date_retrieved
+O00254,PAR3_HUMAN,F2RL2,Proteinase-activated receptor 3,,374,unknown,,349,PAR3,1,orphan,2026-05-05
+O14804,TAAR5_HUMAN,TAAR5,Trace amine-associated receptor 5,,337,unknown,,170,TAAR5,1,orphan,2026-05-05
+O14843,FFAR3_HUMAN,FFAR3,Free fatty acid receptor 3,,346,unknown,,227,FFA3 receptor,0,cognate,2026-05-05
+O43603,GALR2_HUMAN,GALR2,Galanin receptor type 2,,387,unknown,,244,GAL2 receptor,0,cognate,2026-05-05
+O95047,OR2A4_HUMAN,OR2A4,Olfactory receptor 2A4,,310,unknown,,,,,unknown,2026-05-05
+O95977,S1PR4_HUMAN,S1PR4,Sphingosine 1-phosphate receptor 4,,384,unknown,,278,S1P4 receptor,0,cognate,2026-05-05
+P03999,OPSB_HUMAN,OPN1SW,Short-wave-sensitive opsin 1,,345,unknown,,2960,OPN1SW,1,orphan,2026-05-05
+P04201,MAS_HUMAN,MAS1,Proto-oncogene Mas,,325,unknown,,150,MAS1,1,orphan,2026-05-05
+P08172,ACM2_HUMAN,CHRM2,Muscarinic acetylcholine receptor M2,,466,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:36690613).",14,M2 receptor,0,cognate,2026-05-05
+P0DMS8,AA3R_HUMAN,ADORA3,Adenosine receptor A3,,318,cognate,,21,A3 receptor,0,cognate,2026-05-05
+P16473,TSHR_HUMAN,TSHR,Thyrotropin receptor,,764,unknown,,255,TSH receptor,0,cognate,2026-05-05
+P21728,DRD1_HUMAN,DRD1,D(1A) dopamine receptor,,446,unknown,,214,D1 receptor,0,cognate,2026-05-05
+P25025,CXCR2_HUMAN,CXCR2,C-X-C chemokine receptor type 2,,360,unknown,,69,CXCR2,0,cognate,2026-05-05
+P25103,NK1R_HUMAN,TACR1,Substance-P receptor,,407,cognate,,360,NK1 receptor,0,cognate,2026-05-05
+P25106,ACKR3_HUMAN,ACKR3,Atypical chemokine receptor 3,,362,unknown,"Atypical chemokine receptor that controls chemokine levels and localization via high-affinity chemokine binding that is uncoupled from classic ligand-driven signal transduction cascades, resulting instead in chemokine sequestration, degradation, or transcytosis. Chemokine binding does not activate G-protein-mediated signal transduction but instead induces beta-arrestin recruitment, leading to ligand internalization and activation of MAPK signaling pathway (PubMed:16940167, PubMed:18653785, PubMed:20018651).",80,ACKR3,0,cognate,2026-05-05
+P25929,NPY1R_HUMAN,NPY1R,Neuropeptide Y receptor type 1,,384,unknown,,305,Y1 receptor,0,cognate,2026-05-05
+P28335,5HT2C_HUMAN,HTR2C,5-hydroxytryptamine receptor 2C,,458,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:18703043, PubMed:29398112).",8,5-HT2C receptor,0,cognate,2026-05-05
+P29275,AA2BR_HUMAN,ADORA2B,Adenosine receptor A2b,,332,cognate,,20,A2B receptor,0,cognate,2026-05-05
+P29371,NK3R_HUMAN,TACR3,Neuromedin-K receptor,,465,unknown,,362,NK3 receptor,0,cognate,2026-05-05
+P30542,AA1R_HUMAN,ADORA1,Adenosine receptor A1,,326,unknown,,18,A1 receptor,0,cognate,2026-05-05
+P30968,GNRHR_HUMAN,GNRHR,Gonadotropin-releasing hormone receptor,,328,unknown,,256,GnRH1 receptor,0,cognate,2026-05-05
+P31391,SSR4_HUMAN,SSTR4,Somatostatin receptor type 4,,388,unknown,,358,SST4 receptor,0,cognate,2026-05-05
+P32239,GASR_HUMAN,CCKBR,Gastrin/cholecystokinin type B receptor,,447,unknown,,77,CCK2 receptor,0,cognate,2026-05-05
+P32241,VIPR1_HUMAN,VIPR1,Vasoactive intestinal polypeptide receptor 1,,457,unknown,"Binds VIP and both PACAP27 and PACAP38 bioactive peptides with the following order of ligand affinity VIP = PACAP27 > PACAP38 (PubMed:35477937, PubMed:8179610). Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors.",371,VPAC1 receptor,0,cognate,2026-05-05
+P32246,CCR1_HUMAN,CCR1,C-C chemokine receptor type 1,,355,unknown,"When activated by its ligands including CCL3, CCL5-9, CCL13-16 and CCL23, triggers a signaling cascade within immune cells, leading to their migration towards the source of the chemokine (PubMed:15905581, PubMed:38417634).",58,CCR1,0,cognate,2026-05-05
+P34982,OR1D2_HUMAN,OR1D2,Olfactory receptor 1D2,,312,unknown,,,,,unknown,2026-05-05
+P34995,PE2R1_HUMAN,PTGER1,Prostaglandin E2 receptor EP1 subtype,,402,unknown,,340,EP1 receptor,0,cognate,2026-05-05
+P35414,APJ_HUMAN,APLNR,Apelin receptor,,380,unknown,"G protein-coupled receptor for peptide hormones apelin (APLN) and apelin receptor early endogenous ligand (APELA/ELA), that plays a role in the regulation of normal cardiovascular function and fluid homeostasis (PubMed:11090199, PubMed:22810587, PubMed:25639753, PubMed:28137936, PubMed:35817871, PubMed:38428423). However, the presence of apelin ligand blunts cardiac hypertrophic induction from APLNR/APJ on response to pathological stimuli (PubMed:22810587, PubMed:38428423).",36,apelin receptor,0,cognate,2026-05-05
+P35462,DRD3_HUMAN,DRD3,D(3) dopamine receptor,,400,cognate,,216,D3 receptor,0,cognate,2026-05-05
+P41145,OPRK_HUMAN,OPRK1,Kappa-type opioid receptor,,380,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase.",318,&kappa; receptor,0,cognate,2026-05-05
+P41146,OPRX_HUMAN,OPRL1,Nociceptin receptor,,370,unknown,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors.,320,NOP receptor,1,orphan,2026-05-05
+P41968,MC3R_HUMAN,MC3R,Melanocortin receptor 3,,323,cognate,,284,MC3 receptor,0,cognate,2026-05-05
+P46089,GPR3_HUMAN,GPR3,G-protein coupled receptor 3,,330,unknown,"Essential activator of thermogenic adipocytes, where it drives thermogenesis via constitutive G(s)-coupling activity in the absence of ligand (PubMed:34048700).",83,GPR3,0,cognate,2026-05-05
+P46094,XCR1_HUMAN,XCR1,Chemokine XC receptor 1,,333,unknown,,75,XCR1,0,cognate,2026-05-05
+P47211,GALR1_HUMAN,GALR1,Galanin receptor type 1,,349,unknown,,243,GAL1 receptor,0,cognate,2026-05-05
+P47871,GLR_HUMAN,GCGR,Glucagon receptor,,477,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase (PubMed:32193322, PubMed:38346960).",251,glucagon receptor,0,cognate,2026-05-05
+P47900,P2RY1_HUMAN,P2RY1,P2Y purinoceptor 1,,373,cognate,,323,P2Y1 receptor,0,cognate,2026-05-05
+P48039,MTR1A_HUMAN,MTNR1A,Melatonin receptor type 1A,,350,cognate,,287,MT1 receptor,0,cognate,2026-05-05
+P48960,AGRE5_HUMAN,ADGRE5,Adhesion G protein-coupled receptor E5,,835,unknown,,177,ADGRE5,1,orphan,2026-05-05
+P49019,HCAR3_HUMAN,HCAR3,Hydroxycarboxylic acid receptor 3,,387,cognate,,313,HCA3 receptor,0,cognate,2026-05-05
+P49238,CX3C1_HUMAN,CX3CR1,CX3C chemokine receptor 1,,355,unknown,,74,CX3CR1,0,cognate,2026-05-05
+P50406,5HT6R_HUMAN,HTR6,5-hydroxytryptamine receptor 6,,440,cognate,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:35714614).,11,5-HT6 receptor,0,cognate,2026-05-05
+Q01718,ACTHR_HUMAN,MC2R,Adrenocorticotropic hormone receptor,,297,cognate,,283,MC2 receptor,1,orphan,2026-05-05
+Q13255,GRM1_HUMAN,GRM1,Metabotropic glutamate receptor 1,,1194,cognate,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors.,289,mGlu1 receptor,0,cognate,2026-05-05
+Q14246,AGRE1_HUMAN,ADGRE1,Adhesion G protein-coupled receptor E1,,886,orphan,,182,ADGRE1,1,orphan,2026-05-05
+Q14416,GRM2_HUMAN,GRM2,Metabotropic glutamate receptor 2,,872,cognate,"Mechanistically, ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase.",290,mGlu2 receptor,0,cognate,2026-05-05
+Q15077,P2RY6_HUMAN,P2RY6,P2Y purinoceptor 6,,328,unknown,,326,P2Y6 receptor,0,cognate,2026-05-05
+Q5NUL3,FFAR4_HUMAN,FFAR4,Free fatty acid receptor 4,,361,unknown,,127,FFA4 receptor,0,cognate,2026-05-05
+Q6U736,OPN5_HUMAN,OPN5,Opsin-5,,354,unknown,,161,OPN5,1,orphan,2026-05-05
+Q8IYL9,GPR65_HUMAN,GPR65,G-protein coupled receptor 65,,337,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:15326175, PubMed:15618224, PubMed:37722051, PubMed:39753132).",113,GPR65,1,orphan,2026-05-05
+Q8IZF3,AGRF4_HUMAN,ADGRF4,Adhesion G protein-coupled receptor F4,,695,orphan,,195,ADGRF4,1,orphan,2026-05-05
+Q8N6U8,GP161_HUMAN,GPR161,G-protein coupled receptor 161,,529,unknown,Its ligand is unknown (By similarity),141,GPR161,1,orphan,2026-05-05
+Q8NHC4,O10J5_HUMAN,OR10J5,Olfactory receptor 10J5,,309,unknown,,,,,unknown,2026-05-05
+Q8TDU6,GPBAR_HUMAN,GPBAR1,G-protein coupled bile acid receptor 1,,330,unknown,,37,GPBA receptor,0,cognate,2026-05-05
+Q8WXG9,AGRV1_HUMAN,ADGRV1,Adhesion G-protein coupled receptor V1,,6306,unknown,,189,ADGRV1,1,orphan,2026-05-05
+Q92633,LPAR1_HUMAN,LPAR1,Lysophosphatidic acid receptor 1,,364,cognate,,272,LPA1 receptor,1,orphan,2026-05-05
+Q96K78,AGRG7_HUMAN,ADGRG7,Adhesion G-protein coupled receptor G7,,797,orphan,,201,ADGRG7,1,orphan,2026-05-05
+Q96KK4,O10C1_HUMAN,OR10C1,Olfactory receptor 10C1,,312,unknown,,,,,unknown,2026-05-05
+Q96P65,QRFPR_HUMAN,QRFPR,Pyroglutamylated RF-amide peptide receptor,,431,unknown,,333,QRFP receptor,0,cognate,2026-05-05
+Q99705,MCHR1_HUMAN,MCHR1,Melanin-concentrating hormone receptor 1,,353,unknown,,280,MCH1 receptor,0,cognate,2026-05-05
+Q9BXA5,SUCR1_HUMAN,SUCNR1,Succinate receptor 1,,334,unknown,"Mediates succinate triggered intracelleular calcium mobilization, induces migratory responses and acts in synergy with Toll-like receptor ligands for the production of proinflammatory cytokines as well as an enhancement of antigen-specific activation of helper T cells (PubMed:18820681).",166,succinate receptor,0,cognate,2026-05-05
+Q9BY15,AGRE3_HUMAN,ADGRE3,Adhesion G protein-coupled receptor E3,,652,orphan,A ligand for the soluble form of this receptor is present at the surface of monocytes-derived macrophages and activated neutrophils,184,ADGRE3,1,orphan,2026-05-05
+Q9H244,P2Y12_HUMAN,P2RY12,P2Y purinoceptor 12,,342,cognate,,328,P2Y12 receptor,0,cognate,2026-05-05
+Q9H3N8,HRH4_HUMAN,HRH4,Histamine H4 receptor,,390,unknown,Ligand binding induces a conformation change that triggers signaling via G(i)/GNAI1 leading to decreased intracellular cAMP levels by inhibiting adenylate cyclase activity (PubMed:39333117).,265,H4 receptor,0,cognate,2026-05-05
+Q9NPB9,ACKR4_HUMAN,ACKR4,Atypical chemokine receptor 4,,350,unknown,"Atypical chemokine receptor that controls chemokine levels and localization via high-affinity chemokine binding that is uncoupled from classic ligand-driven signal transduction cascades, resulting instead in chemokine sequestration, degradation, or transcytosis. Chemokine-binding does not activate G-protein-mediated signal transduction but instead induces beta-arrestin recruitment, leading to ligand internalization.",315,ACKR4,0,cognate,2026-05-05
+Q9NPC1,LT4R2_HUMAN,LTB4R2,Leukotriene B4 receptor 2,,358,unknown,,268,BLT2 receptor,0,cognate,2026-05-05
+Q9NYM4,GPR83_HUMAN,GPR83,G-protein coupled receptor 83,,423,unknown,,119,GPR83,1,orphan,2026-05-05
+Q9NYQ7,CELR3_HUMAN,CELSR3,Cadherin EGF LAG seven-pass G-type receptor 3,,3312,unknown,,180,CELSR3,1,orphan,2026-05-05
+Q9NZD1,GPC5D_HUMAN,GPRC5D,G-protein coupled receptor family C group 5 member D,,345,unknown,,261,GPRC5D,1,orphan,2026-05-05
+Q9ULV1,FZD4_HUMAN,FZD4,Frizzled-4,,537,unknown,,232,FZD4,1,orphan,2026-05-05
+Q9Y5X5,NPFF2_HUMAN,NPFFR2,Neuropeptide FF receptor 2,,522,unknown,Can also be activated by a variety of naturally occurring or synthetic FMRF-amide like ligands.,301,NPFF2 receptor,0,cognate,2026-05-05
+Q9Y653,AGRG1_HUMAN,ADGRG1,Adhesion G-protein coupled receptor G1,,693,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as RhoA pathway (PubMed:28874577, PubMed:35418682, PubMed:39389061). Ligand-binding also induces cell adhesion activity via association with proteins such as collagen III/COL3A1 and TGM2 (By similarity).",186,ADGRG1,1,orphan,2026-05-05
+O00144,FZD9_HUMAN,FZD9,Frizzled-9,,591,unknown,,237,FZD9,1,orphan,2026-05-05
+O15529,GPR42_HUMAN,GPR42,G-protein coupled receptor 42,,346,unknown,,228,GPR42,1,orphan,2026-05-05
+O15552,FFAR2_HUMAN,FFAR2,Free fatty acid receptor 2,,330,unknown,,226,FFA2 receptor,0,cognate,2026-05-05
+O43614,OX2R_HUMAN,HCRTR2,Orexin receptor type 2,,444,cognate,"Upon neuropeptide ligand binding, HCRTR2 can couple with both G(q)/11 and G(i)/o heterotrimeric G-proteins thereby initiating distinct downstream signaling cascades (PubMed:35614071).",322,OX2 receptor,0,cognate,2026-05-05
+O75473,LGR5_HUMAN,LGR5,Leucine-rich repeat-containing G-protein coupled receptor 5,,907,unknown,,148,LGR5,0,cognate,2026-05-05
+O75899,GABR2_HUMAN,GABBR2,Gamma-aminobutyric acid type B receptor subunit 2,,941,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase (PubMed:10075644, PubMed:10773016, PubMed:24305054).",241,GABAB2,1,orphan,2026-05-05
+P08100,OPSD_HUMAN,RHO,Rhodopsin,,348,cognate,,2963,Rhodopsin,1,orphan,2026-05-05
+P08173,ACM4_HUMAN,CHRM4,Muscarinic acetylcholine receptor M4,,479,unknown,,16,M4 receptor,0,cognate,2026-05-05
+P08908,5HT1A_HUMAN,HTR1A,5-hydroxytryptamine receptor 1A,,422,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:22957663, PubMed:3138543, PubMed:33762731, PubMed:8138923, PubMed:8393041).",1,5-HT1A receptor,0,cognate,2026-05-05
+P08912,ACM5_HUMAN,CHRM5,Muscarinic acetylcholine receptor M5,,532,unknown,,17,M5 receptor,0,cognate,2026-05-05
+P18089,ADA2B_HUMAN,ADRA2B,Alpha-2B adrenergic receptor,,450,unknown,,26,&alpha;2B-adrenoceptor,0,cognate,2026-05-05
+P21731,TA2R_HUMAN,TBXA2R,Thromboxane A2 receptor,,343,unknown,,346,TP receptor,0,cognate,2026-05-05
+P22888,LSHR_HUMAN,LHCGR,Lutropin-choriogonadotropic hormone receptor,,699,unknown,,254,LH receptor,0,cognate,2026-05-05
+P25021,HRH2_HUMAN,HRH2,Histamine H2 receptor,,359,unknown,,263,H2 receptor,1,orphan,2026-05-05
+P25100,ADA1D_HUMAN,ADRA1D,Alpha-1D adrenergic receptor,,572,cognate,"ADRA1D binds the catecholamine ligands norepinephrine and epinephrine (PubMed:7815325, PubMed:8024574, PubMed:8183249)",24,&alpha;1D-adrenoceptor,0,cognate,2026-05-05
+P28566,5HT1E_HUMAN,HTR1E,5-hydroxytryptamine receptor 1E,,365,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:14744596, PubMed:1513320, PubMed:1608964, PubMed:1733778, PubMed:21422162, PubMed:33762731).",4,5-ht1e receptor,0,cognate,2026-05-05
+P30518,V2R_HUMAN,AVPR2,Vasopressin V2 receptor,,371,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (cAMP) (PubMed:33664408, PubMed:33742150).",368,V2 receptor,0,cognate,2026-05-05
+P30550,GRPR_HUMAN,GRPR,Gastrin-releasing peptide receptor,,384,unknown,,39,BB2 receptor,0,cognate,2026-05-05
+P30874,SSR2_HUMAN,SSTR2,Somatostatin receptor type 2,,369,unknown,,356,SST2 receptor,0,cognate,2026-05-05
+P32249,GP183_HUMAN,GPR183,G-protein coupled receptor 183,,361,cognate,"Mediates cell positioning and movement of a number of cells by binding the 7-alpha,25-OHC ligand that forms a chemotactic gradient (By similarity). Also acts as a chemotactic receptor for some T-cells upon binding to 7-alpha,25-OHC ligand (By similarity). Promotes follicular helper T (Tfh) cells differentiation by positioning activated T-cells at the follicle-T-zone interface, promoting contact of newly activated CD4 T-cells with activated dendritic cells and exposing them to Tfh-cell-promoting inducible costimulator (ICOS) ligand (By similarity).",81,GPR183,0,cognate,2026-05-05
+P33032,MC5R_HUMAN,MC5R,Melanocortin receptor 5,,325,cognate,,286,MC5 receptor,0,cognate,2026-05-05
+P35346,SSR5_HUMAN,SSTR5,Somatostatin receptor type 5,,364,unknown,,359,SST5 receptor,0,cognate,2026-05-05
+P41143,OPRD_HUMAN,OPRD1,Delta-type opioid receptor,,372,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase.",317,&delta; receptor,0,cognate,2026-05-05
+P41180,CASR_HUMAN,CASR,Extracellular calcium-sensing receptor,,1078,cognate,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G-proteins) and modulates the activity of downstream effectors (PubMed:38632411).,54,CaS receptor,0,cognate,2026-05-05
+P41231,P2RY2_HUMAN,P2RY2,P2Y purinoceptor 2,,377,unknown,,324,P2Y2 receptor,0,cognate,2026-05-05
+P41587,VIPR2_HUMAN,VIPR2,Vasoactive intestinal polypeptide receptor 2,,438,unknown,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors.,372,VPAC2 receptor,0,cognate,2026-05-05
+P46093,GPR4_HUMAN,GPR4,G-protein coupled receptor 4,,362,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:39753132, PubMed:40211064, PubMed:40215960).",84,GPR4,1,orphan,2026-05-05
+P47872,SCTR_HUMAN,SCTR,Secretin receptor,,440,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and activates cAMP-dependent pathway (PubMed:32811827, PubMed:33008599).",252,secretin receptor,0,cognate,2026-05-05
+P48546,GIPR_HUMAN,GIPR,Gastric inhibitory polypeptide receptor,,466,unknown,,248,GIP receptor,0,cognate,2026-05-05
+P49286,MTR1B_HUMAN,MTNR1B,Melatonin receptor type 1B,,362,cognate,,288,MT2 receptor,0,cognate,2026-05-05
+P49683,PRLHR_HUMAN,PRLHR,Prolactin-releasing peptide receptor,,370,unknown,,337,PrRP receptor,0,cognate,2026-05-05
+P51677,CCR3_HUMAN,CCR3,C-C chemokine receptor type 3,,355,unknown,Ligand binding triggers intracellular signaling that leads to chemotaxis of immune cells.,60,CCR3,0,cognate,2026-05-05
+P51685,CCR8_HUMAN,CCR8,C-C chemokine receptor type 8,,355,unknown,,65,CCR8,0,cognate,2026-05-05
+P51810,GP143_HUMAN,GPR143,G-protein coupled receptor 143,,404,unknown,"After binding to L-DOPA, stimulates Ca(2+) influx into the cytoplasm, increases secretion of the neurotrophic factor SERPINF1 and relocalizes beta arrestin at the plasma membrane; this ligand-dependent signaling occurs through a G(q)-mediated pathway in melanocytic cells.",203,GPR143,0,cognate,2026-05-05
+P61073,CXCR4_HUMAN,CXCR4,C-X-C chemokine receptor type 4,,352,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:16725153, PubMed:17197449, PubMed:18799424, PubMed:39093700).",71,CXCR4,0,cognate,2026-05-05
+Q13304,GPR17_HUMAN,GPR17,Uracil nucleotide/cysteinyl leukotriene receptor,,367,unknown,,88,GPR17,0,cognate,2026-05-05
+Q13585,MTR1L_HUMAN,GPR50,Melatonin-related receptor,,617,unknown,,107,GPR50,1,orphan,2026-05-05
+Q5T6X5,GPC6A_HUMAN,GPRC6A,G-protein coupled receptor family C group 6 member A,,926,unknown,"Receptor activated by multiple ligands, including osteocalcin (BGLAP), basic amino acids, and various cations (PubMed:15576628). Regulates testosterone production by acting as a ligand for uncarboxylated osteocalcin hormone: osteocalcin-binding at the surface of Leydig cells initiates a signaling response that promotes the expression of enzymes required for testosterone synthesis in a CREB-dependent manner (By similarity).",55,GPRC6,0,cognate,2026-05-05
+Q6PRD1,GP179_HUMAN,GPR179,Probable G-protein coupled receptor 179,,2367,orphan,,211,GPR179,1,orphan,2026-05-05
+Q86SM8,MRGRE_HUMAN,MRGPRE,Mas-related G-protein coupled receptor member E,,312,unknown,,153,MRGPRE,1,orphan,2026-05-05
+Q86Y34,AGRG3_HUMAN,ADGRG3,Adhesion G protein-coupled receptor G3,,549,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:33408414).",188,ADGRG3,1,orphan,2026-05-05
+Q8IWK6,AGRA3_HUMAN,ADGRA3,Adhesion G protein-coupled receptor A3,,1321,orphan,,199,ADGRA3,1,orphan,2026-05-05
+Q8IZ08,GP135_HUMAN,GPR135,G-protein coupled receptor 135,,494,orphan,,129,GPR135,1,orphan,2026-05-05
+Q8IZF6,AGRG4_HUMAN,ADGRG4,Adhesion G-protein coupled receptor G4,,3080,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (By similarity).",192,ADGRG4,1,orphan,2026-05-05
+Q8NFJ5,RAI3_HUMAN,GPRC5A,Retinoic acid-induced protein 3,,357,orphan,,258,GPRC5A,1,orphan,2026-05-05
+Q8TDS7,MRGRD_HUMAN,MRGPRD,Mas-related G-protein coupled receptor member D,,321,cognate,"Activated by various ligands, such as beta-alanine, beta-aminoisobutyrate, angiotensin 1-7, alamandine and allantoin, causing a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:15037633, PubMed:23091359, PubMed:35840655, PubMed:39580805).",152,MRGPRD,0,cognate,2026-05-05
+Q8WXD0,RXFP2_HUMAN,RXFP2,Relaxin receptor 2,,754,unknown,,352,RXFP2,0,cognate,2026-05-05
+Q9BZJ8,GPR61_HUMAN,GPR61,G-protein coupled receptor 61,,451,unknown,,110,GPR61,1,orphan,2026-05-05
+Q9NYV8,T2R14_HUMAN,TAS2R14,Taste receptor type 2 member 14,,317,cognate,,668,TAS2R14,1,orphan,2026-05-05
+Q9NZH0,GPC5B_HUMAN,GPRC5B,G-protein coupled receptor family C group 5 member B,,403,unknown,,259,GPRC5B,1,orphan,2026-05-05
+Q9UNW8,GP132_HUMAN,GPR132,Probable G-protein coupled receptor 132,,380,unknown,,128,GPR132,0,cognate,2026-05-05
+Q9Y271,CLTR1_HUMAN,CYSLTR1,Cysteinyl leukotriene receptor 1,,337,unknown,,269,CysLT1 receptor,0,cognate,2026-05-05
+O00222,GRM8_HUMAN,GRM8,Metabotropic glutamate receptor 8,,908,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase.",296,mGlu8 receptor,0,cognate,2026-05-05
+O00270,GPR31_HUMAN,GPR31,"12-(S)-hydroxy-5,8,10,14-eicosatetraenoic acid receptor",,319,unknown,,98,GPR31,1,orphan,2026-05-05
+O00590,ACKR2_HUMAN,ACKR2,Atypical chemokine receptor 2,,384,unknown,"Atypical chemokine receptor that controls chemokine levels and localization via high-affinity chemokine binding that is uncoupled from classic ligand-driven signal transduction cascades, resulting instead in chemokine sequestration, degradation, or transcytosis (PubMed:18201974, PubMed:20373092, PubMed:23479571). Upon active ligand stimulation, activates a beta-arrestin 1 (ARRB1)-dependent, G protein-independent signaling pathway that results in the phosphorylation of the actin-binding protein cofilin (CFL1) through a RAC1-PAK1-LIMK1 signaling pathway (PubMed:23633677).",314,ACKR2,1,orphan,2026-05-05
+O14842,FFAR1_HUMAN,FFAR1,Free fatty acid receptor 1,,300,unknown,"Ligand binding leads to a conformation change that triggers signaling via G-proteins that activate phospholipase C, leading to an increase of the intracellular calcium concentration.",225,FFA1 receptor,0,cognate,2026-05-05
+O43193,MTLR_HUMAN,MLNR,Motilin receptor,,412,unknown,,297,motilin receptor,0,cognate,2026-05-05
+O43613,OX1R_HUMAN,HCRTR1,Orexin/Hypocretin receptor type 1,,425,cognate,,321,OX1 receptor,0,cognate,2026-05-05
+O43749,OR1F1_HUMAN,OR1F1,Olfactory receptor 1F1,,312,unknown,,,,,unknown,2026-05-05
+O60241,AGRB2_HUMAN,ADGRB2,Adhesion G protein-coupled receptor B2,,1585,unknown,,175,ADGRB2,1,orphan,2026-05-05
+O60755,GALR3_HUMAN,GALR3,Galanin receptor type 3,,368,unknown,,245,GAL3 receptor,0,cognate,2026-05-05
+O60883,G37L1_HUMAN,GPR37L1,G-protein coupled receptor 37-like 1,,481,unknown,,104,GPR37L1,0,cognate,2026-05-05
+O75084,FZD7_HUMAN,FZD7,Frizzled-7,,574,unknown,"Following ligand activation, binds to CCDC88C/DAPLE which displaces DVL1 from FZD7 and leads to inhibition of canonical Wnt signaling, activation of G-proteins by CCDC88C and triggering of non-canonical Wnt responses (PubMed:26126266).",235,FZD7,1,orphan,2026-05-05
+O94910,AGRL1_HUMAN,ADGRL1,Adhesion G protein-coupled receptor L1,,1474,cognate,,206,ADGRL1,1,orphan,2026-05-05
+P04000,OPSR_HUMAN,OPN1LW,Long-wave-sensitive opsin 1,,364,unknown,,2961,OPN1LW,1,orphan,2026-05-05
+P14416,DRD2_HUMAN,DRD2,D(2) dopamine receptor,,443,unknown,,215,D2 receptor,0,cognate,2026-05-05
+P21452,NK2R_HUMAN,TACR2,Substance-K receptor,,398,unknown,,361,NK2 receptor,0,cognate,2026-05-05
+P21917,DRD4_HUMAN,DRD4,D(4) dopamine receptor,,419,cognate,,217,D4 receptor,0,cognate,2026-05-05
+P25024,CXCR1_HUMAN,CXCR1,C-X-C chemokine receptor type 1,,350,unknown,,68,CXCR1,0,cognate,2026-05-05
+P25090,FPR2_HUMAN,FPR2,N-formyl peptide receptor 2,,351,cognate,"Ligand binding causes a conformation change that triggers signaling via G(i)/GNAI1 inhibiting adenylate cyclase activity, leading to decreased intracellular cAMP levels (PubMed:40080544). In addition, can recognize a variety of chemically distinct endogenous ligands including proteins and lipids besides formylpeptides and thereby plays multiple roles in inflammation.",223,FPR2,0,cognate,2026-05-05
+P25101,EDNRA_HUMAN,EDNRA,Endothelin-1 receptor,,427,unknown,,219,ETA receptor,0,cognate,2026-05-05
+P32302,CXCR5_HUMAN,CXCR5,C-X-C chemokine receptor type 5,,372,unknown,,72,CXCR5,0,cognate,2026-05-05
+P37288,V1AR_HUMAN,AVPR1A,Vasopressin V1a receptor,,418,unknown,,366,V1A receptor,0,cognate,2026-05-05
+P41586,PACR_HUMAN,ADCYAP1R1,Pituitary adenylate cyclase-activating polypeptide type I receptor,,468,unknown,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors.,370,PAC1 receptor,0,cognate,2026-05-05
+P41594,GRM5_HUMAN,GRM5,Metabotropic glutamate receptor 5,,1212,cognate,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors.,293,mGlu5 receptor,0,cognate,2026-05-05
+P41597,CCR2_HUMAN,CCR2,C-C chemokine receptor type 2,,374,unknown,,59,CCR2,0,cognate,2026-05-05
+P43088,PF2R_HUMAN,PTGFR,Prostaglandin F2-alpha receptor,,359,unknown,,344,FP receptor,0,cognate,2026-05-05
+P43119,PI2R_HUMAN,PTGIR,Prostacyclin receptor,,386,unknown,,345,IP receptor,0,cognate,2026-05-05
+P43657,LPAR6_HUMAN,LPAR6,Lysophosphatidic acid receptor 6,,344,unknown,,163,LPA6 receptor,0,cognate,2026-05-05
+P46663,BKRB1_HUMAN,BDKRB1,B1 bradykinin receptor,,353,unknown,,41,B1 receptor,0,cognate,2026-05-05
+P47898,5HT5A_HUMAN,HTR5A,5-hydroxytryptamine receptor 5A,,357,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:35610220, PubMed:35835867, PubMed:9865521).",10,5-HT5A receptor,0,cognate,2026-05-05
+P48145,NPBW1_HUMAN,NPBWR1,Neuropeptides B/W receptor type 1,,328,unknown,Interacts specifically with a number of opioid ligands.,303,NPBW1 receptor,0,cognate,2026-05-05
+P49685,GPR15_HUMAN,GPR15,G-protein coupled receptor 15,,360,unknown,"Acts via its natural ligand GPR15LG, a chemokine-like polypeptide strongly expressed in gastrointestinal tissues.",87,GPR15,1,orphan,2026-05-05
+P51684,CCR6_HUMAN,CCR6,C-C chemokine receptor type 6,,374,unknown,"Although CCL20 is its major ligand it can also act as a receptor for non-chemokine ligands such as beta-defensins (PubMed:25585877). The ligand-receptor pair CCL20-CCR6 is responsible for the chemotaxis of dendritic cells (DC), effector/ memory T-cells and B-cells and plays an important role at skin and mucosal surfaces under homeostatic and inflammatory conditions, as well as in pathology, including cancer and various autoimmune diseases.",63,CCR6,0,cognate,2026-05-05
+P51686,CCR9_HUMAN,CCR9,C-C chemokine receptor type 9,,369,unknown,,66,CCR9,0,cognate,2026-05-05
+Q01726,MSHR_HUMAN,MC1R,Melanocyte-stimulating hormone receptor,,317,cognate,,282,MC1 receptor,0,cognate,2026-05-05
+Q13467,FZD5_HUMAN,FZD5,Frizzled-5,,585,unknown,,233,FZD5,1,orphan,2026-05-05
+Q14330,GPR18_HUMAN,GPR18,N-arachidonyl glycine receptor,,331,unknown,"Becomes active when triggered by various endogenous ligands including endocannabinoid N-arachidonyl glycine (NAGly), delta-9-tetrahydrocannabinol or resolvin D2/RvD2 derived from the omega-3 fatty acid docosahexaenoic acid (DHA) (PubMed:16844083, PubMed:24762058, PubMed:26195725, PubMed:27572937).",89,GPR18,0,cognate,2026-05-05
+Q14832,GRM3_HUMAN,GRM3,Metabotropic glutamate receptor 3,,879,cognate,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors.,291,mGlu3 receptor,0,cognate,2026-05-05
+Q14833,GRM4_HUMAN,GRM4,Metabotropic glutamate receptor 4,,912,cognate,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors.,292,mGlu4 receptor,0,cognate,2026-05-05
+Q86SQ4,AGRG6_HUMAN,ADGRG6,Adhesion G-protein coupled receptor G6,,1221,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:24227709, PubMed:35394864).",200,ADGRG6,1,orphan,2026-05-05
+Q8IZF2,AGRF5_HUMAN,ADGRF5,Adhesion G protein-coupled receptor F5,,1346,unknown,,196,ADGRF5,1,orphan,2026-05-05
+Q8IZF4,AGRG5_HUMAN,ADGRG5,Adhesion G-protein coupled receptor G5,,528,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:37673336).",194,ADGRG5,1,orphan,2026-05-05
+Q8IZF5,AGRF3_HUMAN,ADGRF3,Adhesion G-protein coupled receptor F3,,1079,orphan,,193,ADGRF3,1,orphan,2026-05-05
+Q8TDV0,GP151_HUMAN,GPR151,G-protein coupled receptor 151,,419,unknown,,137,GPR151,1,orphan,2026-05-05
+Q8TE23,TS1R2_HUMAN,TAS1R2,Taste receptor type 1 member 2,,839,unknown,,657,TAS1R2,1,orphan,2026-05-05
+Q92847,GHSR_HUMAN,GHSR,Growth hormone secretagogue receptor type 1,,366,cognate,,246,ghrelin receptor,0,cognate,2026-05-05
+Q969F8,KISSR_HUMAN,KISS1R,KiSS-1 receptor,,398,unknown,,266,kisspeptin receptor,0,cognate,2026-05-05
+Q96G91,P2Y11_HUMAN,P2RY11,P2Y purinoceptor 11,,374,unknown,,327,P2Y11 receptor,0,cognate,2026-05-05
+Q96LA9,MRGX4_HUMAN,MRGPRX4,Mas-related G-protein coupled receptor member X4,,322,unknown,,159,MRGPRX4,1,orphan,2026-05-05
+Q96LB2,MRGX1_HUMAN,MRGPRX1,Mas-related G-protein coupled receptor member X1,,322,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:36302898, PubMed:37591889).",156,MRGPRX1,0,cognate,2026-05-05
+Q96P66,GP101_HUMAN,GPR101,Probable G-protein coupled receptor 101,,508,orphan,,125,GPR101,1,orphan,2026-05-05
+Q96P68,OXGR1_HUMAN,OXGR1,2-oxoglutarate receptor 1,,337,unknown,,162,oxoglutarate receptor,0,cognate,2026-05-05
+Q96RI0,PAR4_HUMAN,F2RL3,Proteinase-activated receptor 4,,385,unknown,,350,PAR4,1,orphan,2026-05-05
+Q9BXC1,GP174_HUMAN,GPR174,Probable G-protein coupled receptor 174,,333,unknown,,145,GPR174,0,cognate,2026-05-05
+Q9H228,S1PR5_HUMAN,S1PR5,Sphingosine 1-phosphate receptor 5,,398,unknown,,279,S1P5 receptor,0,cognate,2026-05-05
+Q9H461,FZD8_HUMAN,FZD8,Frizzled-8,,694,cognate,Component of the Wnt-Fzd-LRP5-LRP6 complex that triggers beta-catenin signaling through inducing aggregation of receptor-ligand complexes into ribosome-sized signalosomes.,236,FZD8,1,orphan,2026-05-05
+Q9HBX8,LGR6_HUMAN,LGR6,Leucine-rich repeat-containing G-protein coupled receptor 6,,967,unknown,,149,LGR6,0,cognate,2026-05-05
+Q9HBX9,RXFP1_HUMAN,RXFP1,Relaxin receptor 1,,757,cognate,Binding of the ligand may also activate a tyrosine kinase pathway that inhibits the activity of a phosphodiesterase that degrades cAMP,351,RXFP1,0,cognate,2026-05-05
+Q9NPG1,FZD3_HUMAN,FZD3,Frizzled-3,,666,unknown,,231,FZD3,1,orphan,2026-05-05
+Q9NS75,CLTR2_HUMAN,CYSLTR2,Cysteinyl leukotriene receptor 2,,346,unknown,,270,CysLT2 receptor,0,cognate,2026-05-05
+Q9NYQ6,CELR1_HUMAN,CELSR1,Cadherin EGF LAG seven-pass G-type receptor 1,,3014,unknown,,178,CELSR1,1,orphan,2026-05-05
+Q9NYV7,T2R16_HUMAN,TAS2R16,Taste receptor type 2 member 16,,291,unknown,,669,TAS2R16,1,orphan,2026-05-05
+Q9UBS5,GABR1_HUMAN,GABBR1,Gamma-aminobutyric acid type B receptor subunit 1,,961,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase (PubMed:10075644, PubMed:10773016, PubMed:10906333, PubMed:24305054, PubMed:9872744). This could explain the observation that certain small molecule ligands exhibit differential affinity for central versus peripheral sites",240,GABAB1,1,orphan,2026-05-05
+Q9UKP6,UR2R_HUMAN,UTS2R,Urotensin-2 receptor,,389,unknown,"Upon ligand binding, activates intracellular signaling cascades via G-protein coupling, primarily through Gq/11, leading to phospholipase C activation, increased intracellular calcium, and activation of protein kinase C (PKC) (PubMed:18314227). Ligand binding also triggers a marked reduction in the biogenesis of autophagosomes by inhibiting the recruitment of ATG16L1 to pre-autophagosomal endocytic vesicles (PubMed:27715446)",365,UT receptor,0,cognate,2026-05-05
+Q9Y2T6,GPR55_HUMAN,GPR55,G-protein coupled receptor 55,,319,unknown,"G-protein coupled receptor that binds to several ligands including 2-arachidonoyl lysophosphatidylinositol or lysophosphatidylglucoside with high affinity, leading to rapid and transient activation of numerous intracellular signaling pathways (PubMed:36142844, PubMed:36523570, PubMed:37544935).",109,GPR55,0,cognate,2026-05-05
+Q9Y5N1,HRH3_HUMAN,HRH3,Histamine H3 receptor,,445,unknown,,264,H3 receptor,0,cognate,2026-05-05
+O00155,GPR25_HUMAN,GPR25,C-X-C chemokine receptor GPR25,,361,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as RhoA pathway (PubMed:39293486).",95,GPR25,1,orphan,2026-05-05
+O00421,CCRL2_HUMAN,CCRL2,C-C chemokine receptor-like 2,,344,unknown,"Does not appear to be a signaling receptor, but may have a role in modulating chemokine-triggered immune responses by capturing and internalizing CCL19 or by presenting RARRES2 ligand to CMKLR1, a functional signaling receptors.",78,CCRL2,0,cognate,2026-05-05
+O00574,CXCR6_HUMAN,CXCR6,C-X-C chemokine receptor type 6,,342,unknown,,73,CXCR6,0,cognate,2026-05-05
+O43194,GPR39_HUMAN,GPR39,G-protein coupled receptor 39,,453,cognate,,105,GPR39,0,cognate,2026-05-05
+O60242,AGRB3_HUMAN,ADGRB3,Adhesion G protein-coupled receptor B3,,1522,unknown,,176,ADGRB3,1,orphan,2026-05-05
+O95136,S1PR2_HUMAN,S1PR2,Sphingosine 1-phosphate receptor 2,,353,unknown,,276,S1P2 receptor,0,cognate,2026-05-05
+P04001,OPSG_HUMAN,OPN1MW,Medium-wave-sensitive opsin 1,,364,unknown,,2962,OPN1MW,1,orphan,2026-05-05
+P07550,ADRB2_HUMAN,ADRB2,Beta-2 adrenergic receptor,,413,cognate,,29,&beta;2-adrenoceptor,0,cognate,2026-05-05
+P11229,ACM1_HUMAN,CHRM1,Muscarinic acetylcholine receptor M1,,460,unknown,,13,M1 receptor,0,cognate,2026-05-05
+P13945,ADRB3_HUMAN,ADRB3,Beta-3 adrenergic receptor,,408,unknown,,30,&beta;3-adrenoceptor,0,cognate,2026-05-05
+P18825,ADA2C_HUMAN,ADRA2C,Alpha-2C adrenergic receptor,,462,unknown,,27,&alpha;2C-adrenoceptor,0,cognate,2026-05-05
+P21453,S1PR1_HUMAN,S1PR1,Sphingosine 1-phosphate receptor 1,,382,cognate,,275,S1P1 receptor,0,cognate,2026-05-05
+P21730,C5AR1_HUMAN,C5AR1,C5a anaphylatoxin chemotactic receptor 1,,350,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:36806352, PubMed:37852260). The ligand interacts with at least two sites on the receptor: a high-affinity site on the extracellular N-terminus, and a second site in the transmembrane region which activates downstream signaling events (PubMed:7622471, PubMed:8182049, PubMed:9553099)",32,C5a1 receptor,0,cognate,2026-05-05
+P21918,DRD5_HUMAN,DRD5,D(1B) dopamine receptor,,477,unknown,,218,D5 receptor,0,cognate,2026-05-05
+P24530,EDNRB_HUMAN,EDNRB,Endothelin receptor type B,,442,unknown,,220,ETB receptor,0,cognate,2026-05-05
+P28336,NMBR_HUMAN,NMBR,Neuromedin-B receptor,,390,unknown,,38,BB1 receptor,0,cognate,2026-05-05
+P29274,AA2AR_HUMAN,ADORA2A,Adenosine receptor A2a,,412,cognate,,19,A2A receptor,0,cognate,2026-05-05
+P30872,SSR1_HUMAN,SSTR1,Somatostatin receptor type 1,,391,unknown,,355,SST1 receptor,0,cognate,2026-05-05
+P30989,NTR1_HUMAN,NTSR1,Neurotensin receptor type 1,,418,unknown,,309,NTS1 receptor,0,cognate,2026-05-05
+P32248,CCR7_HUMAN,CCR7,C-C chemokine receptor type 7,,378,unknown,,64,CCR7,0,cognate,2026-05-05
+P32745,SSR3_HUMAN,SSTR3,Somatostatin receptor type 3,,418,unknown,,357,SST3 receptor,0,cognate,2026-05-05
+P34972,CNR2_HUMAN,CNR2,Cannabinoid receptor 2,,360,unknown,,57,CB2 receptor,0,cognate,2026-05-05
+P34981,TRFR_HUMAN,TRHR,Thyrotropin-releasing hormone receptor,,398,unknown,"Upon ligand binding, this G-protein-coupled receptor triggers activation of the phosphatidylinositol (IP3)-calcium-protein kinase C (PKC) pathway",363,TRH1 receptor,1,orphan,2026-05-05
+P35367,HRH1_HUMAN,HRH1,Histamine H1 receptor,,487,cognate,,262,H1 receptor,0,cognate,2026-05-05
+P35372,OPRM_HUMAN,OPRM1,Mu-type opioid receptor,,400,unknown,"Endogenous ligands induce rapid desensitization, endocytosis and recycling (By similarity). Heterooligomerization with other GPCRs can modulate agonist binding, signaling and trafficking properties (By similarity) Couples to GNAS and is proposed to be involved in excitatory effects Does not bind agonists but may act through oligomerization with binding-competent OPRM1 isoforms and reduce their ligand binding activity Does not bind agonists but may act through oligomerization with binding-competent OPRM1 isoforms and reduce their ligand binding activity",319,&mu; receptor,0,cognate,2026-05-05
+P35408,PE2R4_HUMAN,PTGER4,Prostaglandin E2 receptor EP4 subtype,,488,unknown,,343,EP4 receptor,0,cognate,2026-05-05
+P41595,5HT2B_HUMAN,HTR2B,5-hydroxytryptamine receptor 2B,,481,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:23519215, PubMed:28129538, PubMed:8078486, PubMed:8143856, PubMed:8882600).",7,5-HT2B receptor,0,cognate,2026-05-05
+P43116,PE2R2_HUMAN,PTGER2,Prostaglandin E2 receptor EP2 subtype,,358,unknown,,341,EP2 receptor,0,cognate,2026-05-05
+P43220,GLP1R_HUMAN,GLP1R,Glucagon-like peptide 1 receptor,,463,unknown,"Ligand binding triggers activation of a signaling cascade that leads to the activation of adenylyl cyclase and increased intracellular cAMP levels (PubMed:19861722, PubMed:26308095, PubMed:27196125, PubMed:28514449, PubMed:7517895, PubMed:8216285, PubMed:8405712).",249,GLP-1 receptor,0,cognate,2026-05-05
+P47775,GPR12_HUMAN,GPR12,G-protein coupled receptor 12,,334,unknown,"Additionally, two lipids sphingosylphosphorylcholine (SPC) and sphingosine-1-phosphate (S1P) may act as endogenous ligand and activate GPR12 (PubMed:12220620)",86,GPR12,0,cognate,2026-05-05
+P47804,RGR_HUMAN,RGR,RPE-retinal G protein-coupled receptor,,291,unknown,,,,,unknown,2026-05-05
+P48146,NPBW2_HUMAN,NPBWR2,Neuropeptides B/W receptor type 2,,333,unknown,Interacts specifically with a number of opioid ligands.,304,NPBW2 receptor,0,cognate,2026-05-05
+P50052,AGTR2_HUMAN,AGTR2,Type-2 angiotensin II receptor,,363,cognate,,35,AT2 receptor,0,cognate,2026-05-05
+P55085,PAR2_HUMAN,F2RL1,Proteinase-activated receptor 2,,397,unknown,,348,PAR2,1,orphan,2026-05-05
+Q02643,GHRHR_HUMAN,GHRHR,Growth hormone-releasing hormone receptor,,423,unknown,,247,GHRH receptor,0,cognate,2026-05-05
+Q14831,GRM7_HUMAN,GRM7,Metabotropic glutamate receptor 7,,915,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase that it inhibits (PubMed:9473604)",295,mGlu7 receptor,0,cognate,2026-05-05
+Q15761,NPY5R_HUMAN,NPY5R,Neuropeptide Y receptor type 5,,445,unknown,,308,Y5 receptor,0,cognate,2026-05-05
+Q16602,CALRL_HUMAN,CALCRL,Calcitonin gene-related peptide type 1 receptor,,461,unknown,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors.,47,calcitonin receptor-like receptor,1,orphan,2026-05-05
+Q5T601,AGRF1_HUMAN,ADGRF1,Adhesion G-protein coupled receptor F1,,910,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:35418679, PubMed:36127364, PubMed:37120430).",190,ADGRF1,0,cognate,2026-05-05
+Q7RTX1,TS1R1_HUMAN,TAS1R1,Taste receptor type 1 member 1,,841,unknown,,656,TAS1R1,1,orphan,2026-05-05
+Q86SQ6,AGRA1_HUMAN,ADGRA1,Adhesion G protein-coupled receptor A1,,560,orphan,,197,ADGRA1,1,orphan,2026-05-05
+Q86VZ1,P2RY8_HUMAN,P2RY8,S-geranylgeranyl-glutathione receptor P2RY8,,359,unknown,,164,P2RY8,1,orphan,2026-05-05
+Q8IZP9,AGRG2_HUMAN,ADGRG2,Adhesion G-protein coupled receptor G2,,1017,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:33303626, PubMed:34234254).",187,ADGRG2,1,orphan,2026-05-05
+Q8NFN8,GP156_HUMAN,GPR156,Probable G-protein coupled receptor 156,,814,unknown,,209,GPR156,1,orphan,2026-05-05
+Q8TDT2,GP152_HUMAN,GPR152,Probable G-protein coupled receptor 152,,470,orphan,,138,GPR152,1,orphan,2026-05-05
+Q96LB1,MRGX2_HUMAN,MRGPRX2,Mas-related G-protein coupled receptor member X2,,330,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:28288109, PubMed:34789874, PubMed:34789875). Acts as a receptor for a number of other ligands, including peptides and alkaloids, such as cortistatin-14, proadrenomedullin peptides PAMP-12 and, at lower extent, PAMP-20, antibacterial protein LL-37, PMX-53 peptide, beta-defensins, and complanadine A (PubMed:12915402, PubMed:15823563, PubMed:21441599, PubMed:22069323, PubMed:23698749, PubMed:24930830, PubMed:34789874, PubMed:34789875).",157,MRGPRX2,0,cognate,2026-05-05
+Q96PE1,AGRA2_HUMAN,ADGRA2,Adhesion G protein-coupled receptor A2,,1338,unknown,,198,ADGRA2,1,orphan,2026-05-05
+Q99500,S1PR3_HUMAN,S1PR3,Sphingosine 1-phosphate receptor 3,,378,unknown,,277,S1P3 receptor,0,cognate,2026-05-05
+Q99677,LPAR4_HUMAN,LPAR4,Lysophosphatidic acid receptor 4,,370,unknown,,94,LPA4 receptor,0,cognate,2026-05-05
+Q9GZQ4,NMUR2_HUMAN,NMUR2,Neuromedin-U receptor 2,,415,unknown,,299,NMU2 receptor,0,cognate,2026-05-05
+Q9GZQ6,NPFF1_HUMAN,NPFFR1,Neuropeptide FF receptor 1,,430,unknown,Can also be activated by a variety of naturally occurring or synthetic FMRF-amide like ligands.,300,NPFF1 receptor,0,cognate,2026-05-05
+Q9HB89,NMUR1_HUMAN,NMUR1,Neuromedin-U receptor 1,,426,unknown,,298,NMU1 receptor,0,cognate,2026-05-05
+Q9HBW0,LPAR2_HUMAN,LPAR2,Lysophosphatidic acid receptor 2,,348,unknown,,273,LPA2 receptor,0,cognate,2026-05-05
+Q9HBW9,AGRL4_HUMAN,ADGRL4,Adhesion G protein-coupled receptor L4,,690,orphan,,181,ADGRL4,1,orphan,2026-05-05
+Q9HCU4,CELR2_HUMAN,CELSR2,Cadherin EGF LAG seven-pass G-type receptor 2,,2923,unknown,,179,CELSR2,1,orphan,2026-05-05
+Q9NQ84,GPC5C_HUMAN,GPRC5C,G-protein coupled receptor family C group 5 member C,,441,unknown,,260,GPRC5C,1,orphan,2026-05-05
+Q9NQS5,GPR84_HUMAN,GPR84,G-protein coupled receptor 84,,396,unknown,,120,GPR84,1,orphan,2026-05-05
+Q9P296,C5AR2_HUMAN,C5AR2,C5a anaphylatoxin chemotactic receptor 2,,337,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:12540846).",33,C5a2 receptor,0,cognate,2026-05-05
+Q9UHM6,OPN4_HUMAN,OPN4,Melanopsin,,478,unknown,,2758,OPN4,1,orphan,2026-05-05
+Q9ULW2,FZD10_HUMAN,FZD10,Frizzled-10,,581,unknown,,238,FZD10,1,orphan,2026-05-05
+O14514,AGRB1_HUMAN,ADGRB1,Adhesion G protein-coupled receptor B1,,1584,unknown,,174,ADGRB1,0,cognate,2026-05-05
+O15303,GRM6_HUMAN,GRM6,Metabotropic glutamate receptor 6,,877,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase.",294,mGlu6 receptor,0,cognate,2026-05-05
+O15354,GPR37_HUMAN,GPR37,Prosaposin receptor GPR37,,613,unknown,"Acts as a receptor for several ligands including prosaposin, osteocalcin or neuroprotectin D1. Ligand binding induces endocytosis, followed by an ERK phosphorylation cascade (PubMed:11439185, PubMed:23690594).",103,GPR37,0,cognate,2026-05-05
+O60353,FZD6_HUMAN,FZD6,Frizzled-6,,706,unknown,,234,FZD6,0,cognate,2026-05-05
+O95490,AGRL2_HUMAN,ADGRL2,Adhesion G protein-coupled receptor L2,,1459,unknown,Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (By similarity).,207,ADGRL2,1,orphan,2026-05-05
+P08588,ADRB1_HUMAN,ADRB1,Beta-1 adrenergic receptor,,477,cognate,,28,&beta;1-adrenoceptor,0,cognate,2026-05-05
+P08913,ADA2A_HUMAN,ADRA2A,Alpha-2A adrenergic receptor,,465,unknown,,25,&alpha;2A-adrenoceptor,0,cognate,2026-05-05
+P20309,ACM3_HUMAN,CHRM3,Muscarinic acetylcholine receptor M3,,590,unknown,,15,M3 receptor,0,cognate,2026-05-05
+P21462,FPR1_HUMAN,FPR1,N-formyl peptide receptor 1,,350,cognate,"Pro-resolving ligands, such as lipoxin A4 or ANXA1, induce the formation of FPR1:FPR2 heterodimers triggering proapoptotic JNK pathway in neutrophils (PubMed:24108355) (Microbial infection) Used by Y.",222,FPR1,0,cognate,2026-05-05
+P21554,CNR1_HUMAN,CNR1,Cannabinoid receptor 1,,472,unknown,,56,CB1 receptor,0,cognate,2026-05-05
+P23945,FSHR_HUMAN,FSHR,Follicle-stimulating hormone receptor,,695,unknown,,253,FSH receptor,0,cognate,2026-05-05
+P25089,FPR3_HUMAN,FPR3,N-formyl peptide receptor 3,,353,unknown,,224,FPR3,0,cognate,2026-05-05
+P25105,PTAFR_HUMAN,PTAFR,Platelet-activating factor receptor,,342,unknown,,334,PAF receptor,0,cognate,2026-05-05
+P25116,PAR1_HUMAN,F2R,Proteinase-activated receptor 1,,425,unknown,,347,PAR1,1,orphan,2026-05-05
+P28221,5HT1D_HUMAN,HTR1D,5-hydroxytryptamine receptor 1D,,377,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:10452531, PubMed:1565658, PubMed:1652050, PubMed:33762731).",3,5-HT1D receptor,0,cognate,2026-05-05
+P28222,5HT1B_HUMAN,HTR1B,5-hydroxytryptamine receptor 1B,,390,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:10452531, PubMed:1315531, PubMed:1328844, PubMed:1348246, PubMed:1351684, PubMed:1559993, PubMed:1565658, PubMed:1610347, PubMed:23519210, PubMed:23519215, PubMed:29925951, PubMed:8218242).",2,5-HT1B receptor,0,cognate,2026-05-05
+P28223,5HT2A_HUMAN,HTR2A,5-hydroxytryptamine receptor 2A,,471,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:28129538, PubMed:35084960).",6,5-HT2A receptor,0,cognate,2026-05-05
+P30411,BKRB2_HUMAN,BDKRB2,B2 bradykinin receptor,,391,unknown,,42,B2 receptor,0,cognate,2026-05-05
+P30556,AGTR1_HUMAN,AGTR1,Type-1 angiotensin II receptor,,359,cognate,,34,AT1 receptor,0,cognate,2026-05-05
+P30559,OXYR_HUMAN,OXTR,Oxytocin receptor,,389,unknown,,369,OT receptor,0,cognate,2026-05-05
+P30939,5HT1F_HUMAN,HTR1F,5-hydroxytryptamine receptor 1F,,366,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:34239069).",5,5-HT1F receptor,0,cognate,2026-05-05
+P30988,CALCR_HUMAN,CALCR,Calcitonin receptor,,474,unknown,"G protein-coupled receptor activated by ligand peptides amylin (IAPP), calcitonin (CT/CALCA) and calcitonin gene-related peptide type 1 (CGRP1/CALCA) (PubMed:35324283, PubMed:38603770). Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors. Does not undergo receptor internalization following ligand binding (PubMed:7476993)",43,CT receptor,0,cognate,2026-05-05
+P32238,CCKAR_HUMAN,CCKAR,Cholecystokinin receptor type A,,428,unknown,,76,CCK1 receptor,0,cognate,2026-05-05
+P32245,MC4R_HUMAN,MC4R,Melanocortin receptor 4,,332,cognate,,285,MC4 receptor,0,cognate,2026-05-05
+P32247,BRS3_HUMAN,BRS3,Bombesin receptor subtype-3,,399,unknown,,40,BB3 receptor,1,orphan,2026-05-05
+P34969,5HT7R_HUMAN,HTR7,5-hydroxytryptamine receptor 7,,479,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:35714614, PubMed:8226867).",12,5-HT7 receptor,0,cognate,2026-05-05
+P34998,CRFR1_HUMAN,CRHR1,Corticotropin-releasing factor receptor 1,,415,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and down-stream effectors, such as adenylate cyclase.",212,CRF1 receptor,0,cognate,2026-05-05
+P35348,ADA1A_HUMAN,ADRA1A,Alpha-1A adrenergic receptor,,466,cognate,"ADRA1A binds the catecholamine ligands norepinephrine and epinephrine (PubMed:18802028, PubMed:37563160, PubMed:7815325, PubMed:8024574, PubMed:8183249, PubMed:8832064).",22,&alpha;1A-adrenoceptor,0,cognate,2026-05-05
+P35368,ADA1B_HUMAN,ADRA1B,Alpha-1B adrenergic receptor,,520,cognate,"ADRA1B binds the catecholamine ligands norepinephrine and epinephrine (PubMed:7815325, PubMed:8183249).",23,&alpha;1B-adrenoceptor,0,cognate,2026-05-05
+P43115,PE2R3_HUMAN,PTGER3,Prostaglandin E2 receptor EP3 subtype,,390,unknown,,342,EP3 receptor,0,cognate,2026-05-05
+P46091,CML2_HUMAN,CMKLR2,Chemerin-like receptor 2,,355,unknown,,82,chemerin receptor 2,0,cognate,2026-05-05
+P46092,CCR10_HUMAN,CCR10,C-C chemokine receptor type 10,,362,unknown,,67,CCR10,0,cognate,2026-05-05
+P46095,GPR6_HUMAN,GPR6,G-protein coupled receptor 6,,362,unknown,,85,GPR6,1,orphan,2026-05-05
+P47901,V1BR_HUMAN,AVPR1B,Vasopressin V1b receptor,,424,unknown,,367,V1B receptor,0,cognate,2026-05-05
+P49146,NPY2R_HUMAN,NPY2R,Neuropeptide Y receptor type 2,,381,unknown,,306,Y2 receptor,0,cognate,2026-05-05
+P49190,PTH2R_HUMAN,PTH2R,Parathyroid hormone 2 receptor,,550,unknown,,332,PTH2 receptor,0,cognate,2026-05-05
+P49682,CXCR3_HUMAN,CXCR3,C-X-C chemokine receptor type 3,,368,unknown,,70,CXCR3,0,cognate,2026-05-05
+P50391,NPY4R_HUMAN,NPY4R,Neuropeptide Y receptor type 4,,375,unknown,,307,Y4 receptor,0,cognate,2026-05-05
+P51582,P2RY4_HUMAN,P2RY4,P2Y purinoceptor 4,,365,unknown,,325,P2Y4 receptor,0,cognate,2026-05-05
+P51679,CCR4_HUMAN,CCR4,C-C chemokine receptor type 4,,360,unknown,,61,CCR4,0,cognate,2026-05-05
+P51681,CCR5_HUMAN,CCR5,C-C chemokine receptor type 5,,352,unknown,,62,CCR5,0,cognate,2026-05-05
+P59542,T2R19_HUMAN,TAS2R19,Taste receptor type 2 member 19,,299,unknown,,670,TAS2R19,1,orphan,2026-05-05
+Q03431,PTH1R_HUMAN,PTH1R,Parathyroid hormone/parathyroid hormone-related peptide receptor,,593,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (cAMP) (PubMed:30975883, PubMed:35932760).",331,PTH1 receptor,0,cognate,2026-05-05
+Q13258,PD2R_HUMAN,PTGDR,Prostaglandin D2 receptor,,359,unknown,,338,DP1 receptor,0,cognate,2026-05-05
+Q13324,CRFR2_HUMAN,CRHR2,Corticotropin-releasing factor receptor 2,,411,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and down-stream effectors, such as adenylate cyclase.",213,CRF2 receptor,0,cognate,2026-05-05
+Q13639,5HT4R_HUMAN,HTR4,5-hydroxytryptamine receptor 4,,388,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:16102731, PubMed:35714614).",9,5-HT4 receptor,0,cognate,2026-05-05
+Q14332,FZD2_HUMAN,FZD2,Frizzled-2,,565,unknown,,230,FZD2,1,orphan,2026-05-05
+Q15722,LT4R1_HUMAN,LTB4R,Leukotriene B4 receptor 1,,352,unknown,,267,BLT1 receptor,0,cognate,2026-05-05
+Q15743,GPR68_HUMAN,GPR68,G-protein coupled receptor 68,,365,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as phospholipase C (PubMed:29677517, PubMed:39753132).",114,GPR68,1,orphan,2026-05-05
+Q16570,ACKR1_HUMAN,ACKR1,Atypical chemokine receptor 1,,336,unknown,"Atypical chemokine receptor that controls chemokine levels and localization via high-affinity chemokine binding that is uncoupled from classic ligand-driven signal transduction cascades, resulting instead in chemokine sequestration, degradation, or transcytosis.",316,ACKR1,1,orphan,2026-05-05
+Q16581,C3AR_HUMAN,C3AR1,C3a anaphylatoxin chemotactic receptor,,482,unknown,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:37852260).",31,C3a receptor,0,cognate,2026-05-05
+Q5T848,MGLYR_HUMAN,GPR158,Metabotropic glycine receptor,,1215,cognate,"In absence of glycine ligand, promotes the GTPase activator activity of RGS7, increasing the GTPase activity of G protein alpha subunits, thereby driving them into their inactive GDP-bound form (PubMed:36996198).",210,GPR158,1,orphan,2026-05-05
+Q6QNK2,AGRD1_HUMAN,ADGRD1,Adhesion G-protein coupled receptor D1,,874,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:39884271).",202,ADGRD1,1,orphan,2026-05-05
+Q6W5P4,NPSR1_HUMAN,NPSR1,Neuropeptide S receptor,,371,unknown,,302,NPS receptor,0,cognate,2026-05-05
+Q7RTX0,TS1R3_HUMAN,TAS1R3,Taste receptor type 1 member 3,,852,unknown,,658,TAS1R3,1,orphan,2026-05-05
+Q7Z602,GP141_HUMAN,GPR141,Probable G-protein coupled receptor 141,,305,orphan,,131,GPR141,1,orphan,2026-05-05
+Q86SQ3,AGRE4_HUMAN,ADGRE4P,Putative adhesion G protein-coupled receptor E4P,,457,unknown,,185,ADGRE4P,1,orphan,2026-05-05
+Q8IZF7,AGRF2_HUMAN,ADGRF2P,Putative adhesion G protein-coupled receptor F2P,,708,orphan,,191,ADGRF2,1,orphan,2026-05-05
+Q8NFJ6,PKR2_HUMAN,PROKR2,Prokineticin receptor 2,,384,unknown,,336,PKR2,0,cognate,2026-05-05
+Q8NG98,OR7D4_HUMAN,OR7D4,Olfactory receptor 7D4,,312,unknown,,,,,unknown,2026-05-05
+Q8NGI8,O5AN1_HUMAN,OR5AN1,Olfactory receptor 5AN1,,311,unknown,"Ligand-binding causes a conformation change that triggers signaling via G(s)-class of G alpha protein GNAL, activating adenylyl cyclase (Probable)",,,,unknown,2026-05-05
+Q8TDS4,HCAR2_HUMAN,HCAR2,Hydroxycarboxylic acid receptor 2,,363,unknown,,312,HCA2 receptor,0,cognate,2026-05-05
+Q8TDS5,OXER1_HUMAN,OXER1,Oxoeicosanoid receptor 1,,384,unknown,,271,OXER1,0,cognate,2026-05-05
+Q96RI8,TAAR6_HUMAN,TAAR6,Trace amine-associated receptor 6,,345,unknown,,171,TAAR6,1,orphan,2026-05-05
+Q96RJ0,TAAR1_HUMAN,TAAR1,Trace amine-associated receptor 1,,339,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:31399635, PubMed:37935376, PubMed:37963465). TAAR1 is coupled with different G(i)/G(o)-, G(s)- or G(q)/G(11) classes of G alpha proteins depending on the ligand (PubMed:31399635, PubMed:37935376, PubMed:37963465).",364,TA1 receptor,0,cognate,2026-05-05
+Q99527,GPER1_HUMAN,GPER1,G-protein coupled estrogen receptor 1,,375,unknown,,221,GPER,0,cognate,2026-05-05
+Q99788,CML1_HUMAN,CMKLR1,Chemerin-like receptor 1,,373,unknown,,79,chemerin receptor 1,0,cognate,2026-05-05
+Q99835,SMO_HUMAN,SMO,Protein smoothened,,787,cognate,,239,SMO,1,orphan,2026-05-05
+Q9BPV8,P2Y13_HUMAN,P2RY13,P2Y purinoceptor 13,,354,unknown,,329,P2Y13 receptor,0,cognate,2026-05-05
+Q9BXB1,LGR4_HUMAN,LGR4,Leucine-rich repeat-containing G-protein coupled receptor 4,,951,unknown,,147,LGR4,0,cognate,2026-05-05
+Q9BXC0,HCAR1_HUMAN,HCAR1,Hydroxycarboxylic acid receptor 1,,346,unknown,,311,HCA1 receptor,0,cognate,2026-05-05
+Q9BZJ7,GPR62_HUMAN,GPR62,G-protein coupled receptor 62,,368,unknown,,111,GPR62,1,orphan,2026-05-05
+Q9GZN0,GPR88_HUMAN,GPR88,G protein-coupled receptor 88,,384,unknown,,123,GPR88,1,orphan,2026-05-05
+Q9H1Y3,OPN3_HUMAN,OPN3,Opsin-3,,402,unknown,,160,OPN3,1,orphan,2026-05-05
+Q9H255,O51E2_HUMAN,OR51E2,Olfactory receptor 51E2,,320,unknown,,,,,unknown,2026-05-05
+Q9HAR2,AGRL3_HUMAN,ADGRL3,Adhesion G protein-coupled receptor L3,,1447,cognate,"Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors (PubMed:35418682). Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase.",208,ADGRL3,1,orphan,2026-05-05
+Q9HC97,GPR35_HUMAN,GPR35,G-protein coupled receptor 35,,309,unknown,"G-protein coupled receptor that binds to several ligands including the tryptophan metabolite kynurenic acid (KYNA), lysophosphatidic acid (LPA) or 5-hydroxyindoleacetic acid (5-HIAA) with high affinity, leading to rapid and transient activation of numerous intracellular signaling pathways (PubMed:16754668, PubMed:19473985, PubMed:20361937, PubMed:24347166, PubMed:35148838, PubMed:35926043). Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:19473985, PubMed:35926043). Plays a role in neutrophil recruitment to sites of inflammation and bacterial clearance through the major serotonin metabolite 5-HIAA that acts as a physiological ligand (",102,GPR35,0,cognate,2026-05-05
+Q9NYW0,T2R10_HUMAN,TAS2R10,Taste receptor type 2 member 10,,307,unknown,,666,TAS2R10,1,orphan,2026-05-05
+Q9NYW4,TA2R5_HUMAN,TAS2R5,Taste receptor type 2 member 5,,299,unknown,,662,TAS2R5,1,orphan,2026-05-05
+Q9NYW5,TA2R4_HUMAN,TAS2R4,Taste receptor type 2 member 4,,299,unknown,,661,TAS2R4,1,orphan,2026-05-05
+Q9UBY5,LPAR3_HUMAN,LPAR3,Lysophosphatidic acid receptor 3,,353,unknown,,274,LPA3 receptor,0,cognate,2026-05-05
+Q9UHX3,AGRE2_HUMAN,ADGRE2,Adhesion G protein-coupled receptor E2,,823,unknown,,183,ADGRE2,1,orphan,2026-05-05
+Q9UP38,FZD1_HUMAN,FZD1,Frizzled-1,,647,unknown,,229,FZD1,1,orphan,2026-05-05
+Q9Y5Y4,PD2R2_HUMAN,PTGDR2,Prostaglandin D2 receptor 2,,395,unknown,,339,DP2 receptor,0,cognate,2026-05-05
+O76099,OR7C1_HUMAN,OR7C1,Olfactory receptor 7C1,,320,unknown,,,,,unknown,2026-05-05
+O95371,OR2C1_HUMAN,OR2C1,Olfactory receptor 2C1,,312,unknown,,,,,unknown,2026-05-05
+O95838,GLP2R_HUMAN,GLP2R,Glucagon-like peptide 2 receptor,,553,unknown,,250,GLP-2 receptor,0,cognate,2026-05-05
+P0C645,OR4E1_HUMAN,OR4E1,Olfactory receptor 4E1,,315,unknown,,,,,unknown,2026-05-05
+P0DN77,OPSG2_HUMAN,OPN1MW2,Medium-wave-sensitive opsin 2,,364,unknown,,,,,unknown,2026-05-05
+P59534,T2R39_HUMAN,TAS2R39,Taste receptor type 2 member 39,,338,unknown,,675,TAS2R39,1,orphan,2026-05-05
+Q14439,GP176_HUMAN,GPR176,G-protein coupled receptor 176,,515,orphan,,637,GPR176,1,orphan,2026-05-05
+Q15620,OR8B8_HUMAN,OR8B8,Olfactory receptor 8B8,,311,unknown,,,,,unknown,2026-05-05
+Q15760,GPR19_HUMAN,GPR19,Probable G-protein coupled receptor 19,,415,unknown,,90,GPR19,1,orphan,2026-05-05
+Q16538,GP162_HUMAN,GPR162,Probable G-protein coupled receptor 162,,588,orphan,,142,GPR162,1,orphan,2026-05-05
+Q49SQ1,GPR33_HUMAN,GPR33,Probable G-protein coupled receptor 33,,333,orphan,,100,GPR33,1,orphan,2026-05-05
+Q7Z5H4,VN1R5_HUMAN,VN1R5,Vomeronasal type-1 receptor 5,,357,unknown,,,,,unknown,2026-05-05
+Q7Z7M1,AGRD2_HUMAN,ADGRD2,Adhesion G protein-coupled receptor D2,,963,orphan,,204,ADGRD2,1,orphan,2026-05-05
+Q8NGH7,O52L1_HUMAN,OR52L1,Olfactory receptor 52L1,,329,unknown,,,,,unknown,2026-05-05
+Q8NGR2,OR1L6_HUMAN,OR1L6,Olfactory receptor 1L6,,347,unknown,,,,,unknown,2026-05-05
+Q8NGS2,OR1J2_HUMAN,OR1J2,Olfactory receptor 1J2,,313,unknown,,,,,unknown,2026-05-05
+Q8NGS8,O13C5_HUMAN,OR13C5,Olfactory receptor 13C5,,318,unknown,,,,,unknown,2026-05-05
+Q8NGX3,O10T2_HUMAN,OR10T2,Olfactory receptor 10T2,,314,unknown,,,,,unknown,2026-05-05
+Q8NH48,OR5B3_HUMAN,OR5B3,Olfactory receptor 5B3,,314,unknown,,,,,unknown,2026-05-05
+Q8TDU9,RL3R2_HUMAN,RXFP4,Relaxin-3 receptor 2,,374,unknown,Binding of the ligand inhibit cAMP accumulation,354,RXFP4,0,cognate,2026-05-05
+Q9GZK4,OR2H1_HUMAN,OR2H1,Olfactory receptor 2H1,,316,unknown,,,,,unknown,2026-05-05
+Q9H2C8,O51V1_HUMAN,OR51V1,Olfactory receptor 51V1,,321,unknown,,,,,unknown,2026-05-05
+Q9H339,O51B5_HUMAN,OR51B5,Olfactory receptor 51B5,,312,unknown,,,,,unknown,2026-05-05
+Q9Y5P1,O51B2_HUMAN,OR51B2,Olfactory receptor 51B2,,312,unknown,,,,,unknown,2026-05-05
+A6NND4,O2AT4_HUMAN,OR2AT4,Olfactory receptor 2AT4,,320,unknown,Endogenous ligand is unknown (Probable).,,,,unknown,2026-05-05
+O60412,OR7C2_HUMAN,OR7C2,Olfactory receptor 7C2,,319,unknown,,,,,unknown,2026-05-05
+O76001,OR2J3_HUMAN,OR2J3,Olfactory receptor 2J3,,311,unknown,,,,,unknown,2026-05-05
+O95007,OR6B1_HUMAN,OR6B1,Olfactory receptor 6B1,,311,unknown,,,,,unknown,2026-05-05
+O95222,OR6A2_HUMAN,OR6A2,Olfactory receptor 6A2,,327,unknown,,,,,unknown,2026-05-05
+P30954,O10J1_HUMAN,OR10J1,Olfactory receptor 10J1,,320,unknown,,,,,unknown,2026-05-05
+P47883,OR3A4_HUMAN,OR3A4P,Putative olfactory receptor 3A4,,348,unknown,,,,,unknown,2026-05-05
+P47888,OR3A3_HUMAN,OR3A3,Olfactory receptor 3A3,,321,unknown,,,,,unknown,2026-05-05
+Q13607,OR2F1_HUMAN,OR2F1,Olfactory receptor 2F1,,317,unknown,,,,,unknown,2026-05-05
+Q7Z3T1,OR2W3_HUMAN,OR2W3,Olfactory receptor 2W3,,314,unknown,,,,,unknown,2026-05-05
+Q86SP6,GP149_HUMAN,GPR149,Probable G-protein coupled receptor 149,,731,orphan,,135,GPR149,1,orphan,2026-05-05
+Q8N628,OR2C3_HUMAN,OR2C3,Olfactory receptor 2C3,,320,unknown,,,,,unknown,2026-05-05
+Q8NDV2,GPR26_HUMAN,GPR26,G-protein coupled receptor 26,,337,orphan,,96,GPR26,1,orphan,2026-05-05
+Q8NGE3,O10P1_HUMAN,OR10P1,Olfactory receptor 10P1,,313,unknown,,,,,unknown,2026-05-05
+Q8NGQ1,OR9G4_HUMAN,OR9G4,Olfactory receptor 9G4,,327,unknown,,,,,unknown,2026-05-05
+Q8NGT0,O13C9_HUMAN,OR13C9,Olfactory receptor 13C9,,318,unknown,,,,,unknown,2026-05-05
+Q8NH94,OR1L1_HUMAN,OR1L1,Olfactory receptor 1L1,,360,unknown,,,,,unknown,2026-05-05
+Q8WZ84,OR8D1_HUMAN,OR8D1,Olfactory receptor 8D1,,308,unknown,,,,,unknown,2026-05-05
+Q96AM1,MRGRF_HUMAN,MRGPRF,Mas-related G-protein coupled receptor member F,,343,orphan,,154,MRGPRF,1,orphan,2026-05-05
+Q96CH1,GP146_HUMAN,GPR146,G-protein coupled receptor 146,,333,unknown,,133,GPR146,1,orphan,2026-05-05
+Q9BY21,GPR87_HUMAN,GPR87,G-protein coupled receptor 87,,358,unknown,,122,GPR87,0,cognate,2026-05-05
+Q9BZJ6,GPR63_HUMAN,GPR63,Probable G-protein coupled receptor 63,,419,orphan,,112,GPR63,0,cognate,2026-05-05
+Q9H1C0,LPAR5_HUMAN,LPAR5,Lysophosphatidic acid receptor 5,,372,unknown,,124,LPA5 receptor,0,cognate,2026-05-05
+Q9H341,O51M1_HUMAN,OR51M1,Olfactory receptor 51M1,,326,unknown,,,,,unknown,2026-05-05
+Q9UJ42,GP160_HUMAN,GPR160,Probable G-protein coupled receptor 160,,338,orphan,,140,GPR160,1,orphan,2026-05-05
+Q9UKL2,O52A1_HUMAN,OR52A1,Olfactory receptor 52A1,,312,unknown,,,,,unknown,2026-05-05
+A6NH00,OR2T8_HUMAN,OR2T8,Olfactory receptor 2T8,,312,unknown,,,,,unknown,2026-05-05
+O14718,OPSX_HUMAN,RRH,Visual pigment-like receptor peropsin,,337,unknown,,,,,unknown,2026-05-05
+P0DN78,OPSG3_HUMAN,OPN1MW3,Medium-wave-sensitive opsin 3,,364,unknown,,,,,unknown,2026-05-05
+P47887,OR1E2_HUMAN,OR1E2,Olfactory receptor 1E2,,323,unknown,,,,,unknown,2026-05-05
+P58173,OR2B6_HUMAN,OR2B6,Olfactory receptor 2B6,,313,unknown,,,,,unknown,2026-05-05
+P59535,T2R40_HUMAN,TAS2R40,Taste receptor type 2 member 40,,323,unknown,,676,TAS2R40,1,orphan,2026-05-05
+P60893,GPR85_HUMAN,GPR85,Probable G-protein coupled receptor 85,,370,orphan,,121,GPR85,1,orphan,2026-05-05
+Q15391,P2Y14_HUMAN,P2RY14,P2Y purinoceptor 14,,338,unknown,,330,P2Y14 receptor,0,cognate,2026-05-05
+Q7RTR8,T2R42_HUMAN,TAS2R42,Taste receptor type 2 member 42,,314,unknown,,672,TAS2R42,1,orphan,2026-05-05
+Q8NGC8,O11H7_HUMAN,OR11H7,Olfactory receptor 11H7,,314,unknown,,,,,unknown,2026-05-05
+Q8NGI2,O52N4_HUMAN,OR52N4,Olfactory receptor 52N4,,321,unknown,,,,,unknown,2026-05-05
+Q8NGM9,OR8D4_HUMAN,OR8D4,Olfactory receptor 8D4,,314,unknown,,,,,unknown,2026-05-05
+Q8NGN3,O10G4_HUMAN,OR10G4,Olfactory receptor 10G4,,311,unknown,,,,,unknown,2026-05-05
+Q8NGR6,OR1B1_HUMAN,OR1B1,Olfactory receptor 1B1,,317,unknown,,,,,unknown,2026-05-05
+Q8NGY0,O10X1_HUMAN,OR10X1,Olfactory receptor 10X1,,326,unknown,,,,,unknown,2026-05-05
+Q8NGY3,OR6K3_HUMAN,OR6K3,Olfactory receptor 6K3,,331,unknown,,,,,unknown,2026-05-05
+Q8NH19,O10AG_HUMAN,OR10AG1,Olfactory receptor 10AG1,,301,unknown,,,,,unknown,2026-05-05
+Q8NH85,OR5R1_HUMAN,OR8U3,Olfactory receptor 8U3,,324,unknown,,,,,unknown,2026-05-05
+Q8TDV2,GP148_HUMAN,GPR148,Probable G-protein coupled receptor 148,,347,orphan,,134,GPR148,1,orphan,2026-05-05
+Q9BXE9,VN1R3_HUMAN,VN1R3,Vomeronasal type-1 receptor 3,,311,unknown,,,,,unknown,2026-05-05
+Q9GZM6,OR8D2_HUMAN,OR8D2,Olfactory receptor 8D2,,311,unknown,,,,,unknown,2026-05-05
+Q9H208,O10A2_HUMAN,OR10A2,Olfactory receptor 10A2,,303,unknown,,,,,unknown,2026-05-05
+Q9H209,O10A4_HUMAN,OR10A4,Olfactory receptor 10A4,,315,unknown,,,,,unknown,2026-05-05
+Q9H342,O51J1_HUMAN,OR51J1,Olfactory receptor 51J1,,316,unknown,,,,,unknown,2026-05-05
+Q9NQN1,OR2S1_HUMAN,OR2S2,Olfactory receptor 2S2,,319,unknown,,,,,unknown,2026-05-05
+Q9NYV9,T2R13_HUMAN,TAS2R13,Taste receptor type 2 member 13,,303,unknown,,667,TAS2R13,1,orphan,2026-05-05
+Q9NYW6,TA2R3_HUMAN,TAS2R3,Taste receptor type 2 member 3,,316,unknown,,660,TAS2R3,1,orphan,2026-05-05
+Q9NYW7,TA2R1_HUMAN,TAS2R1,Taste receptor type 2 member 1,,299,unknown,,659,TAS2R1,1,orphan,2026-05-05
+O14626,GP171_HUMAN,GPR171,G-protein coupled receptor 171,,319,unknown,,143,GPR171,1,orphan,2026-05-05
+O76002,OR2J2_HUMAN,OR2J2,Olfactory receptor 2J2,,312,unknown,,,,,unknown,2026-05-05
+O95800,GPR75_HUMAN,GPR75,Probable G-protein coupled receptor 75,,540,unknown,,115,GPR75,0,cognate,2026-05-05
+P30953,OR1E1_HUMAN,OR1E1,Olfactory receptor 1E1,,314,unknown,,,,,unknown,2026-05-05
+P47893,OR3A2_HUMAN,OR3A2,Olfactory receptor 3A2,,321,unknown,,,,,unknown,2026-05-05
+P58182,O12D2_HUMAN,OR12D2,Olfactory receptor 12D2,,307,unknown,,,,,unknown,2026-05-05
+P59533,T2R38_HUMAN,TAS2R38,Taste receptor type 2 member 38,,333,unknown,,682,TAS2R38,1,orphan,2026-05-05
+P59537,T2R43_HUMAN,TAS2R43,Taste receptor type 2 member 43,,309,unknown,,678,TAS2R43,1,orphan,2026-05-05
+P59540,T2R46_HUMAN,TAS2R46,Taste receptor type 2 member 46,,309,unknown,,679,TAS2R46,1,orphan,2026-05-05
+P59543,T2R20_HUMAN,TAS2R20,Taste receptor type 2 member 20,,309,unknown,,671,TAS2R20,1,orphan,2026-05-05
+Q13606,OR5I1_HUMAN,OR5I1,Olfactory receptor 5I1,,314,unknown,,,,,unknown,2026-05-05
+Q15612,OR1Q1_HUMAN,OR1Q1,Olfactory receptor 1Q1,,314,unknown,,,,,unknown,2026-05-05
+Q50KZ9,TA2R2_HUMAN,TAS2R2,Taste receptor type 2 member 2,,303,unknown,,3315,TAS2R2,1,orphan,2026-05-05
+Q6IFH4,OR6B2_HUMAN,OR6B2,Olfactory receptor 6B2,,312,unknown,,,,,unknown,2026-05-05
+Q7Z5H5,VN1R4_HUMAN,VN1R4,Vomeronasal type-1 receptor 4,,301,unknown,,,,,unknown,2026-05-05
+Q8NGW1,OR6B3_HUMAN,OR6B3,Olfactory receptor 6B3,,331,unknown,,,,,unknown,2026-05-05
+Q8NH59,O51Q1_HUMAN,OR51Q1,Olfactory receptor 51Q1,,317,unknown,,,,,unknown,2026-05-05
+Q8NH87,OR9G1_HUMAN,OR9G1,Olfactory receptor 9G1,,305,unknown,,,,,unknown,2026-05-05
+Q8NH92,OR1S1_HUMAN,OR1S1,Olfactory receptor 1S1,,325,unknown,,,,,unknown,2026-05-05
+Q8NHC8,OR2T6_HUMAN,OR2T6,Olfactory receptor 2T6,,308,unknown,,,,,unknown,2026-05-05
+Q8TCB6,O51E1_HUMAN,OR51E1,Olfactory receptor 51E1,,318,unknown,,,,,unknown,2026-05-05
+Q8TCW9,PKR1_HUMAN,PROKR1,Prokineticin receptor 1,,393,unknown,,335,PKR1,0,cognate,2026-05-05
+Q8WZ94,OR5P3_HUMAN,OR5P3,Olfactory receptor 5P3,,311,unknown,,,,,unknown,2026-05-05
+Q969V1,MCHR2_HUMAN,MCHR2,Melanin-concentrating hormone receptor 2,,340,unknown,,281,MCH2 receptor,0,cognate,2026-05-05
+Q96R48,OR2A5_HUMAN,OR2A5,Olfactory receptor 2A5,,311,unknown,,,,,unknown,2026-05-05
+Q99678,GPR20_HUMAN,GPR20,G-protein coupled receptor 20,,358,orphan,,91,GPR20,1,orphan,2026-05-05
+Q9H205,O2AG1_HUMAN,OR2AG1,Olfactory receptor 2AG1,,316,unknown,,,,,unknown,2026-05-05
+Q9H210,OR2D2_HUMAN,OR2D2,Olfactory receptor 2D2,,308,unknown,,,,,unknown,2026-05-05
+Q9NS66,GP173_HUMAN,GPR173,Probable G-protein coupled receptor 173,,373,unknown,,144,GPR173,1,orphan,2026-05-05
+Q9NYW1,TA2R9_HUMAN,TAS2R9,Taste receptor type 2 member 9,,312,unknown,,665,TAS2R9,1,orphan,2026-05-05
+Q9NYW3,TA2R7_HUMAN,TAS2R7,Taste receptor type 2 member 7,,318,unknown,,663,TAS2R7,1,orphan,2026-05-05
+Q9UPC5,GPR34_HUMAN,GPR34,Probable G-protein coupled receptor 34,,381,unknown,,101,GPR34,0,cognate,2026-05-05
+Q9Y2T5,GPR52_HUMAN,GPR52,G-protein coupled receptor 52,,361,unknown,,108,GPR52,1,orphan,2026-05-05
+A4D2G3,O2A25_HUMAN,OR2A25,Olfactory receptor 2A25,,310,unknown,,,,,unknown,2026-05-05
+A6ND48,O14I1_HUMAN,OR14I1,Olfactory receptor 14I1,,311,unknown,,,,,unknown,2026-05-05
+A6NGY5,O51F1_HUMAN,OR51F1,Olfactory receptor 51F1,,319,unknown,,,,,unknown,2026-05-05
+O75388,GPR32_HUMAN,GPR32,Probable G-protein coupled receptor 32,,356,unknown,"G-protein coupled receptor that binds to several ligands including resolvin D1 (RvD1) with high affinity, leading to rapid and transient activation of numerous intracellular signaling pathways.",99,GPR32,0,cognate,2026-05-05
+O95665,NTR2_HUMAN,NTSR2,Neurotensin receptor type 2,,410,unknown,,310,NTS2 receptor,0,cognate,2026-05-05
+O95918,OR2H2_HUMAN,OR2H2,Olfactory receptor 2H2,,312,unknown,,,,,unknown,2026-05-05
+P35410,MAS1L_HUMAN,MAS1L,Mas-related G-protein coupled receptor MRG,,378,unknown,,151,MAS1L,1,orphan,2026-05-05
+P47890,OR1G1_HUMAN,OR1G1,Olfactory receptor 1G1,,313,unknown,,,,,unknown,2026-05-05
+P59538,T2R31_HUMAN,TAS2R31,Taste receptor type 2 member 31,,309,unknown,,674,TAS2R31,1,orphan,2026-05-05
+Q15617,OR8G1_HUMAN,OR8G1,Olfactory receptor 8G1,,311,unknown,,,,,unknown,2026-05-05
+Q6DWJ6,GP139_HUMAN,GPR139,Probable G-protein coupled receptor 139,,353,orphan,,130,GPR139,0,cognate,2026-05-05
+Q7Z601,GP142_HUMAN,GPR142,G protein-coupled receptor 142,,462,unknown,,132,GPR142,1,orphan,2026-05-05
+Q8NGA0,OR7G1_HUMAN,OR7G1,Olfactory receptor 7G1,,311,unknown,,,,,unknown,2026-05-05
+Q8NGA4,G32P1_HUMAN,GPR32P1,Putative G-protein coupled receptor GPR32P1,,272,orphan,,,,,orphan,2026-05-05
+Q8NGD0,OR4M1_HUMAN,OR4M1,Olfactory receptor 4M1,,313,unknown,,,,,unknown,2026-05-05
+Q8NGG2,OR5T2_HUMAN,OR5T2,Olfactory receptor 5T2,,359,unknown,,,,,unknown,2026-05-05
+Q8NGK2,O52B4_HUMAN,OR52B4,Olfactory receptor 52B4,,314,unknown,,,,,unknown,2026-05-05
+Q8NGV6,OR5H6_HUMAN,OR5H6,Olfactory receptor 5H6,,325,unknown,,,,,unknown,2026-05-05
+Q8NGW6,OR6K6_HUMAN,OR6K6,Olfactory receptor 6K6,,343,unknown,,,,,unknown,2026-05-05
+Q8NH43,OR4L1_HUMAN,OR4L1,Olfactory receptor 4L1,,312,unknown,,,,,unknown,2026-05-05
+Q8NH69,OR5W2_HUMAN,OR5W2,Olfactory receptor 5W2,,310,unknown,,,,,unknown,2026-05-05
+Q8TDV5,GP119_HUMAN,GPR119,Glucose-dependent insulinotropic receptor,,335,unknown,,126,GPR119,0,cognate,2026-05-05
+Q8WZA6,OR1E3_HUMAN,OR1E3,Olfactory receptor 1E3,,343,unknown,,,,,unknown,2026-05-05
+Q969N4,TAAR8_HUMAN,TAAR8,Trace amine-associated receptor 8,,342,unknown,"Ligand-binding causes a conformation change that triggers signaling via G alpha proteins, possibly G(i)/G(o) G alpha proteins (PubMed:25391046)",172,TAAR8,1,orphan,2026-05-05
+Q96P69,GPR78_HUMAN,GPR78,G-protein coupled receptor 78,,363,orphan,,116,GPR78,1,orphan,2026-05-05
+Q96RA2,OR7D2_HUMAN,OR7D2,Olfactory receptor 7D2,,312,unknown,,,,,unknown,2026-05-05
+Q96RI9,TAAR9_HUMAN,TAAR9,Trace amine-associated receptor 9,,348,cognate,,173,TAAR9,1,orphan,2026-05-05
+Q9GZK6,OR2J1_HUMAN,OR2J1,Olfactory receptor 2J1,,312,unknown,,,,,unknown,2026-05-05
+Q9GZP7,VN1R1_HUMAN,VN1R1,Vomeronasal type-1 receptor 1,,353,unknown,,,,,unknown,2026-05-05
+Q9H207,O10A5_HUMAN,OR10A5,Olfactory receptor 10A5,,317,unknown,,,,,unknown,2026-05-05
+Q9H340,O51B6_HUMAN,OR51B6,Olfactory receptor 51B6,,312,unknown,,,,,unknown,2026-05-05
+Q9NSD7,RL3R1_HUMAN,RXFP3,Relaxin-3 receptor 1,,469,unknown,Binding of the ligand inhibit cAMP accumulation,353,RXFP3,0,cognate,2026-05-05
+Q9NYW2,TA2R8_HUMAN,TAS2R8,Taste receptor type 2 member 8,,309,unknown,,664,TAS2R8,1,orphan,2026-05-05
+Q9Y585,OR1A2_HUMAN,OR1A2,Olfactory receptor 1A2,,309,unknown,,,,,unknown,2026-05-05
+A0A3B3IT45,O51C1_HUMAN,OR51C1,Olfactory receptor OR51C1,,312,unknown,,,,,unknown,2026-05-05
+A6NCV1,O6C74_HUMAN,OR6C74,Olfactory receptor 6C74,,312,unknown,,,,,unknown,2026-05-05
+A6NM76,O6C76_HUMAN,OR6C76,Olfactory receptor 6C76,,312,unknown,,,,,unknown,2026-05-05
+A6NMS3,OR5K4_HUMAN,OR5K4,Olfactory receptor 5K4,,321,unknown,,,,,unknown,2026-05-05
+A6NMU1,O52A4_HUMAN,OR52A4P,Olfactory receptor 52A4,,304,unknown,,,,,unknown,2026-05-05
+A6NMZ5,O4C45_HUMAN,OR4C45,Olfactory receptor 4C45,,306,unknown,,,,,unknown,2026-05-05
+O00398,P2Y10_HUMAN,P2RY10,Putative P2Y purinoceptor 10,,339,unknown,,165,P2RY10,0,cognate,2026-05-05
+O60403,O10H2_HUMAN,OR10H2,Olfactory receptor 10H2,,315,unknown,,,,,unknown,2026-05-05
+P0C604,OR4A8_HUMAN,OR4A8,Olfactory receptor 4A8,,315,unknown,,,,,unknown,2026-05-05
+P0C617,O5AL1_HUMAN,OR5AL1,Olfactory receptor 5AL1,,329,unknown,,,,,unknown,2026-05-05
+P0C623,OR4Q2_HUMAN,OR4Q2,Olfactory receptor 4Q2,,314,unknown,,,,,unknown,2026-05-05
+P0C626,OR5G3_HUMAN,OR5G3,Olfactory receptor 5G3,,314,unknown,,,,,unknown,2026-05-05
+P0C628,O5AC1_HUMAN,OR5AC1,Olfactory receptor 5AC1,,307,unknown,,,,,unknown,2026-05-05
+P0DN80,OR5H8_HUMAN,OR5H8,Olfactory receptor 5H8,,308,unknown,,,,,unknown,2026-05-05
+P58170,OR1D5_HUMAN,OR1D5,Olfactory receptor 1D5,,312,unknown,,,,,unknown,2026-05-05
+P58181,O10A3_HUMAN,OR10A3,Olfactory receptor 10A3,,314,unknown,,,,,unknown,2026-05-05
+P59544,T2R50_HUMAN,TAS2R50,Taste receptor type 2 member 50,,299,unknown,,677,TAS2R50,1,orphan,2026-05-05
+Q5JQS5,OR2BB_HUMAN,OR2B11,Olfactory receptor 2B11,,317,unknown,,,,,unknown,2026-05-05
+Q5TZ20,OR2G6_HUMAN,OR2G6,Olfactory receptor 2G6,,316,unknown,,,,,unknown,2026-05-05
+Q6IEU7,OR5MA_HUMAN,OR5M10,Olfactory receptor 5M10,,315,unknown,,,,,unknown,2026-05-05
+Q6IFG1,O52E8_HUMAN,OR52E8,Olfactory receptor 52E8,,313,unknown,,,,,unknown,2026-05-05
+Q6IFN5,O7E24_HUMAN,OR7E24,Olfactory receptor 7E24,,339,unknown,,,,,unknown,2026-05-05
+Q86SM5,MRGRG_HUMAN,MRGPRG,Mas-related G-protein coupled receptor member G,,289,orphan,,155,MRGPRG,1,orphan,2026-05-05
+Q8N146,OR8H3_HUMAN,OR8H3,Olfactory receptor 8H3,,312,unknown,,,,,unknown,2026-05-05
+Q8N349,OR2LD_HUMAN,OR2L13,Olfactory receptor 2L13,,312,unknown,,,,,unknown,2026-05-05
+Q8NFZ6,VN1R2_HUMAN,VN1R2,Vomeronasal type-1 receptor 2,,395,unknown,,,,,unknown,2026-05-05
+Q8NG80,OR2L5_HUMAN,OR2L5,Olfactory receptor 2L5,,312,unknown,,,,,unknown,2026-05-05
+Q8NG84,O2AK2_HUMAN,OR2AK2,Olfactory receptor 2AK2,,335,unknown,,,,,unknown,2026-05-05
+Q8NG85,OR2L3_HUMAN,OR2L3,Olfactory receptor 2L3,,312,unknown,,,,,unknown,2026-05-05
+Q8NGA6,O10H5_HUMAN,OR10H5,Olfactory receptor 10H5,,315,unknown,,,,,unknown,2026-05-05
+Q8NGB4,OR4S1_HUMAN,OR4S1,Olfactory receptor 4S1,,309,unknown,,,,,unknown,2026-05-05
+Q8NGB8,O4F15_HUMAN,OR4F15,Olfactory receptor 4F15,,312,unknown,,,,,unknown,2026-05-05
+Q8NGC3,O10G2_HUMAN,OR10G2,Olfactory receptor 10G2,,310,unknown,,,,,unknown,2026-05-05
+Q8NGC9,O11H4_HUMAN,OR11H4,Olfactory receptor 11H4,,324,unknown,,,,,unknown,2026-05-05
+Q8NGD2,OR4K2_HUMAN,OR4K2,Olfactory receptor 4K2,,314,unknown,,,,,unknown,2026-05-05
+Q8NGD4,OR4K1_HUMAN,OR4K1,Olfactory receptor 4K1,,311,unknown,,,,,unknown,2026-05-05
+Q8NGF1,O52R1_HUMAN,OR52R1,Olfactory receptor 52R1,,315,unknown,,,,,unknown,2026-05-05
+Q8NGF4,O5AP2_HUMAN,OR5AP2,Olfactory receptor 5AP2,,316,unknown,,,,,unknown,2026-05-05
+Q8NGF6,O10W1_HUMAN,OR10W1,Olfactory receptor 10W1,,305,unknown,,,,,unknown,2026-05-05
+Q8NGF7,OR5BH_HUMAN,OR5B17,Olfactory receptor 5B17,,314,unknown,,,,,unknown,2026-05-05
+Q8NGH6,O52L2_HUMAN,OR52L2P,Putative olfactory receptor 52L2,,319,unknown,,,,,unknown,2026-05-05
+Q8NGH8,O56A4_HUMAN,OR56A4,Olfactory receptor 56A4,,313,unknown,,,,,unknown,2026-05-05
+Q8NGI0,O52N2_HUMAN,OR52N2,Olfactory receptor 52N2,,321,unknown,,,,,unknown,2026-05-05
+Q8NGJ1,OR4D6_HUMAN,OR4D6,Olfactory receptor 4D6,,314,unknown,,,,,unknown,2026-05-05
+Q8NGL0,OR5L2_HUMAN,OR5L2,Olfactory receptor 5L2,,311,unknown,,,,,unknown,2026-05-05
+Q8NGL2,OR5L1_HUMAN,OR5L1,Olfactory receptor 5L1,,311,unknown,,,,,unknown,2026-05-05
+Q8NGL3,OR5DE_HUMAN,OR5D14,Olfactory receptor 5D14,,314,unknown,,,,,unknown,2026-05-05
+Q8NGN1,OR6T1_HUMAN,OR6T1,Olfactory receptor 6T1,,323,unknown,,,,,unknown,2026-05-05
+Q8NGP4,OR5M3_HUMAN,OR5M3,Olfactory receptor 5M3,,307,unknown,,,,,unknown,2026-05-05
+Q8NGQ6,OR9I1_HUMAN,OR9I1,Olfactory receptor 9I1,,314,unknown,,,,,unknown,2026-05-05
+Q8NGR1,O13A1_HUMAN,OR13A1,Olfactory receptor 13A1,,328,unknown,,,,,unknown,2026-05-05
+Q8NGX0,O11L1_HUMAN,OR11L1,Olfactory receptor 11L1,,322,unknown,,,,,unknown,2026-05-05
+Q8NGX2,O2T35_HUMAN,OR2T35,Olfactory receptor 2T35,,323,unknown,,,,,unknown,2026-05-05
+Q8NGX6,O10R2_HUMAN,OR10R2,Olfactory receptor 10R2,,335,unknown,,,,,unknown,2026-05-05
+Q8NGY2,OR6K2_HUMAN,OR6K2,Olfactory receptor 6K2,,324,unknown,,,,,unknown,2026-05-05
+Q8NGY9,OR2L8_HUMAN,OR2L8,Olfactory receptor 2L8,,312,unknown,,,,,unknown,2026-05-05
+Q8NGZ0,O2AJ1_HUMAN,OR2AJ1,Olfactory receptor 2AJ1,,328,unknown,,,,,unknown,2026-05-05
+Q8NGZ3,O13G1_HUMAN,OR13G1,Olfactory receptor 13G1,,307,unknown,,,,,unknown,2026-05-05
+Q8NH50,OR8K5_HUMAN,OR8K5,Olfactory receptor 8K5,,307,unknown,,,,,unknown,2026-05-05
+Q8NH79,OR6X1_HUMAN,OR6X1,Olfactory receptor 6X1,,312,unknown,,,,,unknown,2026-05-05
+Q8NH89,O5AK3_HUMAN,OR5AK3P,Olfactory receptor 5AK3,,298,unknown,,,,,unknown,2026-05-05
+Q8NHA6,OR2W6_HUMAN,OR2W6P,Putative olfactory receptor 2W6,,318,unknown,,,,,unknown,2026-05-05
+Q8NHA8,OR1FC_HUMAN,OR1F12P,Putative olfactory receptor 1F12P,,337,unknown,,,,,unknown,2026-05-05
+Q8NHB7,OR5K1_HUMAN,OR5K1,Olfactory receptor 5K1,,308,unknown,,,,,unknown,2026-05-05
+Q96R08,OR5BC_HUMAN,OR5B12,Olfactory receptor 5B12,,314,unknown,,,,,unknown,2026-05-05
+Q96R54,O14A2_HUMAN,OR14A2,Olfactory receptor 14A2,,314,unknown,,,,,unknown,2026-05-05
+Q96RB7,OR5MB_HUMAN,OR5M11,Olfactory receptor 5M11,,305,unknown,,,,,unknown,2026-05-05
+Q96RD2,O52B2_HUMAN,OR52B2,Olfactory receptor 52B2,,323,unknown,,,,,unknown,2026-05-05
+Q9NZP2,OR6C2_HUMAN,OR6C2,Olfactory receptor 6C2,,312,unknown,,,,,unknown,2026-05-05
+A0A286YEU6,OR1R1_HUMAN,OR1R1,Olfactory receptor 1R1,,314,unknown,,,,,unknown,2026-05-05
+A3KFT3,OR2M5_HUMAN,OR2M5,Olfactory receptor 2M5,,312,unknown,,,,,unknown,2026-05-05
+A6NDH6,O5H15_HUMAN,OR5H15,Olfactory receptor 5H15,,313,unknown,,,,,unknown,2026-05-05
+A6NIJ9,O6C70_HUMAN,OR6C70,Olfactory receptor 6C70,,312,unknown,,,,,unknown,2026-05-05
+A6NL26,O5B21_HUMAN,OR5B21,Olfactory receptor 5B21,,309,unknown,,,,,unknown,2026-05-05
+P59536,T2R41_HUMAN,TAS2R41,Taste receptor type 2 member 41,,307,unknown,,680,TAS2R41,1,orphan,2026-05-05
+Q15622,OR7A5_HUMAN,OR7A5,Olfactory receptor 7A5,,319,unknown,,,,,unknown,2026-05-05
+Q6IEY1,OR4F3_HUMAN,OR4F3,Olfactory receptor 4F3/4F16/4F29,,312,unknown,,,,,unknown,2026-05-05
+Q6IEZ7,OR2T5_HUMAN,OR2T5,Olfactory receptor 2T5,,315,unknown,,,,,unknown,2026-05-05
+Q8N127,O5AS1_HUMAN,OR5AS1,Olfactory receptor 5AS1,,324,unknown,,,,,unknown,2026-05-05
+Q8NG94,O11H1_HUMAN,OR11H1,Olfactory receptor 11H1,,326,unknown,,,,,unknown,2026-05-05
+Q8NG97,OR2Z1_HUMAN,OR2Z1,Olfactory receptor 2Z1,,314,unknown,,,,,unknown,2026-05-05
+Q8NGA1,OR1M1_HUMAN,OR1M1,Olfactory receptor 1M1,,313,unknown,,,,,unknown,2026-05-05
+Q8NGA8,O4F17_HUMAN,OR4F17,Olfactory receptor 4F17,,305,unknown,,,,,unknown,2026-05-05
+Q8NGC5,OR6J1_HUMAN,OR6J1,Olfactory receptor 6J1,,347,unknown,,,,,unknown,2026-05-05
+Q8NGC6,OR4KH_HUMAN,OR4K17,Olfactory receptor 4K17,,312,unknown,,,,,unknown,2026-05-05
+Q8NGC7,O11H6_HUMAN,OR11H6,Olfactory receptor 11H6,,330,unknown,,,,,unknown,2026-05-05
+Q8NGE2,O2AP1_HUMAN,OR2AP1,Olfactory receptor 2AP1,,309,unknown,,,,,unknown,2026-05-05
+Q8NGE5,O10A7_HUMAN,OR10A7,Olfactory receptor 10A7,,316,unknown,,,,,unknown,2026-05-05
+Q8NGE9,OR9Q2_HUMAN,OR9Q2,Olfactory receptor 9Q2,,314,unknown,,,,,unknown,2026-05-05
+Q8NGG8,OR8B3_HUMAN,OR8B3,Olfactory receptor 8B3,,313,unknown,,,,,unknown,2026-05-05
+Q8NGH5,O56A1_HUMAN,OR56A1,Olfactory receptor 56A1,,318,unknown,,,,,unknown,2026-05-05
+Q8NGI6,OR4DA_HUMAN,OR4D10,Olfactory receptor 4D10,,311,unknown,,,,,unknown,2026-05-05
+Q8NGJ3,O52E1_HUMAN,OR52E1,Olfactory receptor 52E1,,308,unknown,,,,,unknown,2026-05-05
+Q8NGJ5,O51L1_HUMAN,OR51L1,Olfactory receptor 51L1,,315,unknown,,,,,unknown,2026-05-05
+Q8NGJ6,O51A4_HUMAN,OR51A4,Olfactory receptor 51A4,,313,unknown,,,,,unknown,2026-05-05
+Q8NGK6,O52I1_HUMAN,OR52I1,Olfactory receptor 52I1,,324,unknown,,,,,unknown,2026-05-05
+Q8NGL9,OR4CG_HUMAN,OR4C16,Olfactory receptor 4C16,,310,unknown,,,,,unknown,2026-05-05
+Q8NGN0,OR4D5_HUMAN,OR4D5,Olfactory receptor 4D5,,318,unknown,,,,,unknown,2026-05-05
+Q8NGN5,O10G8_HUMAN,OR10G8,Olfactory receptor 10G8,,311,unknown,,,,,unknown,2026-05-05
+Q8NGP0,OR4CD_HUMAN,OR4C13,Olfactory receptor 4C13,,309,unknown,,,,,unknown,2026-05-05
+Q8NGP2,OR8J1_HUMAN,OR8J1,Olfactory receptor 8J1,,316,unknown,,,,,unknown,2026-05-05
+Q8NGQ2,OR6Q1_HUMAN,OR6Q1,Olfactory receptor 6Q1,,317,unknown,,,,,unknown,2026-05-05
+Q8NGR3,OR1K1_HUMAN,OR1K1,Olfactory receptor 1K1,,316,unknown,,,,,unknown,2026-05-05
+Q8NGR9,OR1N2_HUMAN,OR1N2,Olfactory receptor 1N2,,316,unknown,,,,,unknown,2026-05-05
+Q8NGS5,O13C4_HUMAN,OR13C4,Olfactory receptor 13C4,,318,unknown,,,,,unknown,2026-05-05
+Q8NGS9,O13C2_HUMAN,OR13C2,Olfactory receptor 13C2,,318,unknown,,,,,unknown,2026-05-05
+Q8NGU2,OR9A4_HUMAN,OR9A4,Olfactory receptor 9A4,,314,unknown,,,,,unknown,2026-05-05
+Q8NGX1,O2T34_HUMAN,OR2T34,Olfactory receptor 2T34,,318,unknown,,,,,unknown,2026-05-05
+Q8NGY1,O10Z1_HUMAN,OR10Z1,Olfactory receptor 10Z1,,313,unknown,,,,,unknown,2026-05-05
+Q8NH03,OR2T3_HUMAN,OR2T3,Olfactory receptor 2T3,,318,unknown,,,,,unknown,2026-05-05
+Q8NH08,O10AC_HUMAN,OR10AC1,Olfactory receptor 10AC1,,325,unknown,,,,,unknown,2026-05-05
+Q8NH09,OR8S1_HUMAN,OR8S1,Olfactory receptor 8S1,,359,unknown,,,,,unknown,2026-05-05
+Q8NH41,OR4KF_HUMAN,OR4K15,Olfactory receptor 4K15,,324,unknown,,,,,unknown,2026-05-05
+Q8NH53,O52N1_HUMAN,OR52N1,Olfactory receptor 52N1,,320,unknown,,,,,unknown,2026-05-05
+Q8NH55,O52E5_HUMAN,OR52E5,Olfactory receptor 52E5,,327,unknown,,,,,unknown,2026-05-05
+Q8NH64,O51A7_HUMAN,OR51A7,Olfactory receptor 51A7,,312,unknown,,,,,unknown,2026-05-05
+Q8NH81,O10G6_HUMAN,OR10G6,Olfactory receptor 10G6,,332,unknown,,,,,unknown,2026-05-05
+Q8WZ92,OR5P2_HUMAN,OR5P2,Olfactory receptor 5P2,,322,unknown,,,,,unknown,2026-05-05
+Q96R09,OR5B2_HUMAN,OR5B2,Olfactory receptor 5B2,,309,unknown,,,,,unknown,2026-05-05
+Q96R28,OR2M2_HUMAN,OR2M2,Olfactory receptor 2M2,,347,unknown,,,,,unknown,2026-05-05
+Q96R47,O2A14_HUMAN,OR2A14,Olfactory receptor 2A14,,310,unknown,,,,,unknown,2026-05-05
+Q96RD0,OR8B2_HUMAN,OR8B2,Olfactory receptor 8B2,,313,unknown,,,,,unknown,2026-05-05
+Q99680,GPR22_HUMAN,GPR22,G-protein coupled receptor 22,,433,unknown,,93,GPR22,1,orphan,2026-05-05
+Q9GZK7,O11A1_HUMAN,OR11A1,Olfactory receptor 11A1,,315,unknown,,,,,unknown,2026-05-05
+Q9P1P4,TAAR3_HUMAN,TAAR3P,Putative trace amine-associated receptor 3,,343,unknown,,168,TAAR3,1,orphan,2026-05-05
+Q9P1Q5,OR1A1_HUMAN,OR1A1,Olfactory receptor 1A1,,309,unknown,,,,,unknown,2026-05-05
+Q9UGF6,OR5V1_HUMAN,OR5V1,Olfactory receptor 5V1,,321,unknown,,,,,unknown,2026-05-05
+Q9UGF7,O12D3_HUMAN,OR12D3,Olfactory receptor 12D3,,316,unknown,,,,,unknown,2026-05-05
+Q9Y3N9,OR2W1_HUMAN,OR2W1,Olfactory receptor 2W1,,320,unknown,,,,,unknown,2026-05-05
+Q9Y5Y3,GPR45_HUMAN,GPR45,Probable G-protein coupled receptor 45,,372,orphan,,106,GPR45,1,orphan,2026-05-05
+A0A2R8Y4L6,OR5D3_HUMAN,OR5D3,Olfactory receptor 5D3,,323,unknown,,,,,unknown,2026-05-05
+A6NET4,OR5K3_HUMAN,OR5K3,Olfactory receptor 5K3,,321,unknown,,,,,unknown,2026-05-05
+A6NF89,OR6C6_HUMAN,OR6C6,Olfactory receptor 6C6,,314,unknown,,,,,unknown,2026-05-05
+A6NHG9,O5H14_HUMAN,OR5H14,Olfactory receptor 5H14,,310,unknown,,,,,unknown,2026-05-05
+O14581,OR7AH_HUMAN,OR7A17,Olfactory receptor 7A17,,309,unknown,,,,,unknown,2026-05-05
+O60404,O10H3_HUMAN,OR10H3,Olfactory receptor 10H3,,316,unknown,,,,,unknown,2026-05-05
+P0C629,O10J4_HUMAN,OR10J4,Olfactory receptor 10J4,,311,unknown,,,,,unknown,2026-05-05
+P0C646,O52Z1_HUMAN,OR52Z1P,Olfactory receptor 52Z1P,,298,unknown,,,,,unknown,2026-05-05
+P0DMU2,OR8G3_HUMAN,OR8G3,Olfactory receptor 8G3,,310,unknown,,,,,unknown,2026-05-05
+P47881,OR3A1_HUMAN,OR3A1,Olfactory receptor 3A1,,315,unknown,,,,,unknown,2026-05-05
+P47884,OR1D4_HUMAN,OR1D4,Olfactory receptor 1D4,,311,unknown,,,,,unknown,2026-05-05
+P59539,T2R45_HUMAN,TAS2R45,Taste receptor type 2 member 45,,299,unknown,,2828,TAS2R45,1,orphan,2026-05-05
+Q6IEV9,OR4CB_HUMAN,OR4C11,Olfactory receptor 4C11,,310,unknown,,,,,unknown,2026-05-05
+Q6IF36,O8G2P_HUMAN,OR8G2P,Olfactory receptor 8G2,,304,unknown,,,,,unknown,2026-05-05
+Q6IF42,OR2A2_HUMAN,OR2A2,Olfactory receptor 2A2,,318,unknown,,,,,unknown,2026-05-05
+Q6IF99,O10K2_HUMAN,OR10K2,Olfactory receptor 10K2,,312,unknown,,,,,unknown,2026-05-05
+Q8IXE1,OR4N5_HUMAN,OR4N5,Olfactory receptor 4N5,,308,unknown,,,,,unknown,2026-05-05
+Q8N0Y3,OR4N4_HUMAN,OR4N4,Olfactory receptor 4N4,,316,unknown,,,,,unknown,2026-05-05
+Q8NG77,O2T12_HUMAN,OR2T12,Olfactory receptor 2T12,,320,unknown,,,,,unknown,2026-05-05
+Q8NGB6,OR4M2_HUMAN,OR4M2,Olfactory receptor 4M2,,313,unknown,,,,,unknown,2026-05-05
+Q8NGC0,O5AU1_HUMAN,OR5AU1,Olfactory receptor 5AU1,,362,unknown,,,,,unknown,2026-05-05
+Q8NGC1,O11G2_HUMAN,OR11G2,Olfactory receptor 11G2,,345,unknown,,,,,unknown,2026-05-05
+Q8NGC2,OR4E2_HUMAN,OR4E2,Olfactory receptor 4E2,,313,cognate,,,,,cognate,2026-05-05
+Q8NGD1,OR4N2_HUMAN,OR4N2,Olfactory receptor 4N2,,307,unknown,,,,,unknown,2026-05-05
+Q8NGE0,O10AD_HUMAN,OR10AD1,Olfactory receptor 10AD1,,317,unknown,,,,,unknown,2026-05-05
+Q8NGG4,OR8H1_HUMAN,OR8H1,Olfactory receptor 8H1,,311,unknown,,,,,unknown,2026-05-05
+Q8NGG7,OR8A1_HUMAN,OR8A1,Olfactory receptor 8A1,,326,unknown,,,,,unknown,2026-05-05
+Q8NGH9,O52E4_HUMAN,OR52E4,Olfactory receptor 52E4,,312,unknown,,,,,unknown,2026-05-05
+Q8NGI4,OR4DB_HUMAN,OR4D11,Olfactory receptor 4D11,,311,unknown,,,,,unknown,2026-05-05
+Q8NGI7,O10V1_HUMAN,OR10V1,Olfactory receptor 10V1,,309,unknown,,,,,unknown,2026-05-05
+Q8NGI9,OR5A2_HUMAN,OR5A2,Olfactory receptor 5A2,,324,unknown,,,,,unknown,2026-05-05
+Q8NGJ4,O52E2_HUMAN,OR52E2,Olfactory receptor 52E2,,325,unknown,,,,,unknown,2026-05-05
+Q8NGJ7,O51A2_HUMAN,OR51A2,Olfactory receptor 51A2,,313,unknown,,,,,unknown,2026-05-05
+Q8NGK0,O51G2_HUMAN,OR51G2,Olfactory receptor 51G2,,314,unknown,,,,,unknown,2026-05-05
+Q8NGK4,O52K1_HUMAN,OR52K1,Olfactory receptor 52K1,,314,unknown,,,,,unknown,2026-05-05
+Q8NGL7,OR4P4_HUMAN,OR4P4,Olfactory receptor 4P4,,312,unknown,,,,,unknown,2026-05-05
+Q8NGN2,O10S1_HUMAN,OR10S1,Olfactory receptor 10S1,,331,unknown,,,,,unknown,2026-05-05
+Q8NGR5,OR1L4_HUMAN,OR1L4,Olfactory receptor 1L4,,311,unknown,,,,,unknown,2026-05-05
+Q8NGS4,O13F1_HUMAN,OR13F1,Olfactory receptor 13F1,,319,unknown,,,,,unknown,2026-05-05
+Q8NGS7,O13C8_HUMAN,OR13C8,Olfactory receptor 13C8,,320,unknown,,,,,unknown,2026-05-05
+Q8NGT2,O13J1_HUMAN,OR13J1,Olfactory receptor 13J1,,312,unknown,,,,,unknown,2026-05-05
+Q8NGU4,OR2I1_HUMAN,OR2I1,Putative olfactory receptor 2I1,,315,unknown,,,,,unknown,2026-05-05
+Q8NGV5,O13D1_HUMAN,OR13D1,Olfactory receptor 13D1,,346,unknown,,,,,unknown,2026-05-05
+Q8NGX9,OR6P1_HUMAN,OR6P1,Olfactory receptor 6P1,,317,unknown,,,,,unknown,2026-05-05
+Q8NGY5,OR6N1_HUMAN,OR6N1,Olfactory receptor 6N1,,312,unknown,,,,,unknown,2026-05-05
+Q8NGZ2,O14K1_HUMAN,OR14K1,Olfactory receptor 14K1,,314,unknown,,,,,unknown,2026-05-05
+Q8NGZ4,OR2G3_HUMAN,OR2G3,Olfactory receptor 2G3,,309,unknown,,,,,unknown,2026-05-05
+Q8NGZ5,OR2G2_HUMAN,OR2G2,Olfactory receptor 2G2,,317,unknown,,,,,unknown,2026-05-05
+Q8NH01,O2T11_HUMAN,OR2T11,Olfactory receptor 2T11,,316,unknown,,,,,unknown,2026-05-05
+Q8NH04,O2T27_HUMAN,OR2T27,Olfactory receptor 2T27,,317,unknown,,,,,unknown,2026-05-05
+Q8NH07,O11H2_HUMAN,OR11H2,Olfactory receptor 11H2,,326,unknown,,,,,unknown,2026-05-05
+Q8NH10,OR8U1_HUMAN,OR8U1,Olfactory receptor 8U1,,309,unknown,,,,,unknown,2026-05-05
+Q8NH18,OR5J2_HUMAN,OR5J2,Olfactory receptor 5J2,,312,unknown,,,,,unknown,2026-05-05
+Q8NH37,OR4C3_HUMAN,OR4C3,Olfactory receptor 4C3,,302,unknown,,,,,unknown,2026-05-05
+Q8NH40,OR6S1_HUMAN,OR6S1,Olfactory receptor 6S1,,331,unknown,,,,,unknown,2026-05-05
+Q8NH42,OR4KD_HUMAN,OR4K13,Olfactory receptor 4K13,,304,unknown,,,,,unknown,2026-05-05
+Q8NH54,O56A3_HUMAN,OR56A3,Olfactory receptor 56A3,,315,unknown,,,,,unknown,2026-05-05
+Q8NH60,O52J3_HUMAN,OR52J3,Olfactory receptor 52J3,,311,unknown,,,,,unknown,2026-05-05
+Q8NH70,O4A16_HUMAN,OR4A16,Olfactory receptor 4A16,,328,unknown,,,,,unknown,2026-05-05
+Q8NH72,OR4C6_HUMAN,OR4C6,Olfactory receptor 4C6,,309,unknown,,,,,unknown,2026-05-05
+Q96P88,GNRR2_HUMAN,GNRHR2,Putative gonadotropin-releasing hormone II receptor,,292,unknown,,257,GnRH2 receptor,1,orphan,2026-05-05
+Q96R27,OR2M4_HUMAN,OR2M4,Olfactory receptor 2M4,,311,unknown,,,,,unknown,2026-05-05
+Q96R69,OR4F4_HUMAN,OR4F4,Olfactory receptor 4F4,,305,unknown,,,,,unknown,2026-05-05
+Q96R84,OR1F2_HUMAN,OR1F2P,Putative olfactory receptor 1F2,,312,unknown,,,,,unknown,2026-05-05
+Q96RD3,O52E6_HUMAN,OR52E6,Olfactory receptor 52E6,,313,unknown,,,,,unknown,2026-05-05
+Q99463,NPY6R_HUMAN,NPY6R,Putative neuropeptide Y receptor type 6,,290,unknown,,683,y6 receptor,1,orphan,2026-05-05
+Q9H344,O51I2_HUMAN,OR51I2,Olfactory receptor 51I2,,312,unknown,,,,,unknown,2026-05-05
+Q9NS67,GPR27_HUMAN,GPR27,Probable G-protein coupled receptor 27,,375,orphan,,97,GPR27,1,orphan,2026-05-05
+Q9NZP0,OR6C3_HUMAN,OR6C3,Olfactory receptor 6C3,,311,unknown,,,,,unknown,2026-05-05
+Q9Y4A9,O10H1_HUMAN,OR10H1,Olfactory receptor 10H1,,318,unknown,,,,,unknown,2026-05-05
+A0A2R8YED5,O5BS1_HUMAN,OR5BS1,Olfactory receptor 5BS1,,311,unknown,,,,,unknown,2026-05-05
+A6NDL8,O6C68_HUMAN,OR6C68,Olfactory receptor 6C68,,312,unknown,,,,,unknown,2026-05-05
+A6NFC9,OR2W5_HUMAN,OR2W5P,Putative olfactory receptor 2W5,,320,unknown,,,,,unknown,2026-05-05
+A6NKK0,OR5H1_HUMAN,OR5H1,Olfactory receptor 5H1,,313,unknown,,,,,unknown,2026-05-05
+A6NM03,O2AG2_HUMAN,OR2AG2,Olfactory receptor 2AG2,,316,unknown,,,,,unknown,2026-05-05
+O76000,OR2B3_HUMAN,OR2B3,Putative olfactory receptor 2B3,,313,unknown,,,,,unknown,2026-05-05
+O95013,O4F21_HUMAN,OR4F21,Olfactory receptor 4F21,,312,unknown,,,,,unknown,2026-05-05
+O95221,OR5F1_HUMAN,OR5F1,Olfactory receptor 5F1,,314,unknown,,,,,unknown,2026-05-05
+P0C7T2,OR2T7_HUMAN,OR2T7,Olfactory receptor 2T7,,308,unknown,,,,,unknown,2026-05-05
+P0C7T3,O56A5_HUMAN,OR56A5,Olfactory receptor 56A5,,313,unknown,,,,,unknown,2026-05-05
+P0DN82,O12D1_HUMAN,OR12D1,Olfactory receptor 12D1,,320,unknown,,,,,unknown,2026-05-05
+P0DQD5,NPY42_HUMAN,NPY4R2,Neuropeptide Y receptor type 4-2,,375,unknown,,,,,unknown,2026-05-05
+P59541,T2R30_HUMAN,TAS2R30,Taste receptor type 2 member 30,,319,unknown,,673,TAS2R30,1,orphan,2026-05-05
+P59551,T2R60_HUMAN,TAS2R60,Taste receptor type 2 member 60,,318,unknown,,681,TAS2R60,1,orphan,2026-05-05
+Q15615,OR4D1_HUMAN,OR4D1,Olfactory receptor 4D1,,310,unknown,,,,,unknown,2026-05-05
+Q15619,OR1C1_HUMAN,OR1C1,Olfactory receptor 1C1,,314,unknown,,,,,unknown,2026-05-05
+Q5JRS4,O10J3_HUMAN,OR10J3,Olfactory receptor 10J3,,329,unknown,,,,,unknown,2026-05-05
+Q5UAW9,GP157_HUMAN,GPR157,G-protein coupled receptor 157,,335,orphan,,205,GPR157,1,orphan,2026-05-05
+Q6IF00,OR2T2_HUMAN,OR2T2,Olfactory receptor 2T2,,324,unknown,,,,,unknown,2026-05-05
+Q6NV75,GP153_HUMAN,GPR153,Probable G-protein coupled receptor 153,,609,orphan,,139,GPR153,1,orphan,2026-05-05
+Q8N0Y5,OR8I2_HUMAN,OR8I2,Olfactory receptor 8I2,,310,unknown,,,,,unknown,2026-05-05
+Q8N162,OR8H2_HUMAN,OR8H2,Olfactory receptor 8H2,,312,unknown,,,,,unknown,2026-05-05
+Q8NG78,OR8G5_HUMAN,OR8G5,Olfactory receptor 8G5,,346,unknown,,,,,unknown,2026-05-05
+Q8NG81,OR2M7_HUMAN,OR2M7,Olfactory receptor 2M7,,312,unknown,,,,,unknown,2026-05-05
+Q8NG83,OR2M3_HUMAN,OR2M3,Olfactory receptor 2M3,,312,unknown,,,,,unknown,2026-05-05
+Q8NG92,O13H1_HUMAN,OR13H1,Olfactory receptor 13H1,,308,unknown,,,,,unknown,2026-05-05
+Q8NG95,OR7G3_HUMAN,OR7G3,Olfactory receptor 7G3,,312,unknown,,,,,unknown,2026-05-05
+Q8NG99,OR7G2_HUMAN,OR7G2,Olfactory receptor 7G2,,324,unknown,,,,,unknown,2026-05-05
+Q8NGA2,OR7A2_HUMAN,OR7A2P,Putative olfactory receptor 7A2,,310,unknown,,,,,unknown,2026-05-05
+Q8NGA5,O10H4_HUMAN,OR10H4,Olfactory receptor 10H4,,316,unknown,,,,,unknown,2026-05-05
+Q8NGB2,OR4C5_HUMAN,OR4C5,Olfactory receptor 4C5,,326,unknown,,,,,unknown,2026-05-05
+Q8NGB9,OR4F6_HUMAN,OR4F6,Olfactory receptor 4F6,,312,unknown,,,,,unknown,2026-05-05
+Q8NGD3,OR4K5_HUMAN,OR4K5,Olfactory receptor 4K5,,323,unknown,,,,,unknown,2026-05-05
+Q8NGD5,OR4KE_HUMAN,OR4K14,Olfactory receptor 4K14,,310,unknown,,,,,unknown,2026-05-05
+Q8NGE1,OR6C4_HUMAN,OR6C4,Olfactory receptor 6C4,,309,unknown,,,,,unknown,2026-05-05
+Q8NGE7,OR9K2_HUMAN,OR9K2,Olfactory receptor 9K2,,335,unknown,,,,,unknown,2026-05-05
+Q8NGE8,OR4D9_HUMAN,OR4D9,Olfactory receptor 4D9,,314,unknown,,,,,unknown,2026-05-05
+Q8NGF0,O52B6_HUMAN,OR52B6,Olfactory receptor 52B6,,335,unknown,,,,,unknown,2026-05-05
+Q8NGF9,OR4X2_HUMAN,OR4X2,Olfactory receptor 4X2,,303,unknown,,,,,unknown,2026-05-05
+Q8NGG1,OR8J2_HUMAN,OR8J2,Olfactory receptor 8J2,,315,unknown,,,,,unknown,2026-05-05
+Q8NGG5,OR8K1_HUMAN,OR8K1,Olfactory receptor 8K1,,319,unknown,,,,,unknown,2026-05-05
+Q8NGH3,OR2D3_HUMAN,OR2D3,Olfactory receptor 2D3,,330,unknown,,,,,unknown,2026-05-05
+Q8NGI1,O56B2_HUMAN,OR56B2,Olfactory receptor 56B2,,316,unknown,,,,,unknown,2026-05-05
+Q8NGJ2,O52H1_HUMAN,OR52H1,Olfactory receptor 52H1,,314,unknown,,,,,unknown,2026-05-05
+Q8NGJ8,O51S1_HUMAN,OR51S1,Olfactory receptor 51S1,,323,unknown,,,,,unknown,2026-05-05
+Q8NGJ9,O51T1_HUMAN,OR51T1,Olfactory receptor 51T1,,327,unknown,,,,,unknown,2026-05-05
+Q8NGK1,O51G1_HUMAN,OR51G1,Olfactory receptor 51G1,,321,unknown,,,,,unknown,2026-05-05
+Q8NGL4,OR5DD_HUMAN,OR5D13,Olfactory receptor 5D13,,314,unknown,,,,,unknown,2026-05-05
+Q8NGL6,O4A15_HUMAN,OR4A15,Olfactory receptor 4A15,,344,unknown,,,,,unknown,2026-05-05
+Q8NGM1,OR4CF_HUMAN,OR4C15,Olfactory receptor 4C15,,316,unknown,,,,,unknown,2026-05-05
+Q8NGN4,O10G9_HUMAN,OR10G9,Olfactory receptor 10G9,,311,unknown,,,,,unknown,2026-05-05
+Q8NGN7,O10D4_HUMAN,OR10D4P,Putative olfactory receptor 10D4,,298,unknown,,,,,unknown,2026-05-05
+Q8NGN8,OR4A4_HUMAN,OR4A4P,Putative olfactory receptor 4A4,,299,unknown,,,,,unknown,2026-05-05
+Q8NGP3,OR5M9_HUMAN,OR5M9,Olfactory receptor 5M9,,310,unknown,,,,,unknown,2026-05-05
+Q8NGP6,OR5M8_HUMAN,OR5M8,Olfactory receptor 5M8,,311,unknown,,,,,unknown,2026-05-05
+Q8NGP8,OR5M1_HUMAN,OR5M1,Olfactory receptor 5M1,,315,unknown,,,,,unknown,2026-05-05
+Q8NGP9,O5AR1_HUMAN,OR5AR1,Olfactory receptor 5AR1,,310,unknown,,,,,unknown,2026-05-05
+Q8NGQ3,OR1S2_HUMAN,OR1S2,Olfactory receptor 1S2,,325,unknown,,,,,unknown,2026-05-05
+Q8NGQ4,O10Q1_HUMAN,OR10Q1,Olfactory receptor 10Q1,,319,unknown,,,,,unknown,2026-05-05
+Q8NGR4,OR5C1_HUMAN,OR5C1,Olfactory receptor 5C1,,320,unknown,,,,,unknown,2026-05-05
+Q8NGS0,OR1N1_HUMAN,OR1N1,Olfactory receptor 1N1,,311,unknown,,,,,unknown,2026-05-05
+Q8NGS1,OR1J4_HUMAN,OR1J4,Olfactory receptor 1J4,,313,unknown,,,,,unknown,2026-05-05
+Q8NGS3,OR1J1_HUMAN,OR1J1,Olfactory receptor 1J1,,322,unknown,,,,,unknown,2026-05-05
+Q8NGT1,OR2K2_HUMAN,OR2K2,Olfactory receptor 2K2,,316,unknown,,,,,unknown,2026-05-05
+Q8NGT7,O2A12_HUMAN,OR2A12,Olfactory receptor 2A12,,310,unknown,,,,,unknown,2026-05-05
+Q8NGT9,OR2A1_HUMAN,OR2A1,Olfactory receptor 2A1/2A42,,310,unknown,,,,,unknown,2026-05-05
+Q8NGU1,OR9A1_HUMAN,OR9A1P,Olfactory receptor 9A1,,314,unknown,,,,,unknown,2026-05-05
+Q8NGU9,GP150_HUMAN,GPR150,Probable G-protein coupled receptor 150,,434,orphan,,136,GPR150,1,orphan,2026-05-05
+Q8NGV0,OR2Y1_HUMAN,OR2Y1,Olfactory receptor 2Y1,,311,unknown,,,,,unknown,2026-05-05
+Q8NGV7,OR5H2_HUMAN,OR5H2,Olfactory receptor 5H2,,309,unknown,,,,,unknown,2026-05-05
+Q8NGX5,O10K1_HUMAN,OR10K1,Olfactory receptor 10K1,,313,unknown,,,,,unknown,2026-05-05
+Q8NGZ6,OR6F1_HUMAN,OR6F1,Olfactory receptor 6F1,,308,unknown,,,,,unknown,2026-05-05
+Q8NH02,O2T29_HUMAN,OR2T29,Olfactory receptor 2T29,,315,unknown,,,,,unknown,2026-05-05
+Q8NH06,OR1P1_HUMAN,OR1P1,Olfactory receptor 1P1,,330,unknown,,,,,unknown,2026-05-05
+Q8NH49,OR4X1_HUMAN,OR4X1,Olfactory receptor 4X1,,305,unknown,,,,,unknown,2026-05-05
+Q8NH51,OR8K3_HUMAN,OR8K3,Olfactory receptor 8K3,,312,unknown,,,,,unknown,2026-05-05
+Q8NH56,O52N5_HUMAN,OR52N5,Olfactory receptor 52N5,,324,unknown,,,,,unknown,2026-05-05
+Q8NH61,O51F2_HUMAN,OR51F2,Olfactory receptor 51F2,,342,unknown,,,,,unknown,2026-05-05
+Q8NH63,O51H1_HUMAN,OR51H1,Olfactory receptor 51H1,,302,unknown,,,,,unknown,2026-05-05
+Q8NH67,O52I2_HUMAN,OR52I2,Olfactory receptor 52I2,,350,unknown,,,,,unknown,2026-05-05
+Q8NH73,OR4S2_HUMAN,OR4S2,Olfactory receptor 4S2,,311,unknown,,,,,unknown,2026-05-05
+Q8NH83,OR4A5_HUMAN,OR4A5,Olfactory receptor 4A5,,315,unknown,,,,,unknown,2026-05-05
+Q8NH90,O5AK2_HUMAN,OR5AK2,Olfactory receptor 5AK2,,309,unknown,,,,,unknown,2026-05-05
+Q8NHB8,OR5K2_HUMAN,OR5K2,Olfactory receptor 5K2,,316,unknown,,,,,unknown,2026-05-05
+Q8NHC5,O14AG_HUMAN,OR14A16,Olfactory receptor 14A16,,309,unknown,,,,,unknown,2026-05-05
+Q8NHC7,O14CZ_HUMAN,OR14C36,Olfactory receptor 14C36,,312,unknown,,,,,unknown,2026-05-05
+Q8TDU5,VNRL4_HUMAN,VN1R17P,Putative vomeronasal receptor-like protein 4,,208,unknown,,,,,unknown,2026-05-05
+Q96P67,GPR82_HUMAN,GPR82,Probable G-protein coupled receptor 82,,336,orphan,,118,GPR82,1,orphan,2026-05-05
+Q96R30,OR2V2_HUMAN,OR2V2,Olfactory receptor 2V2,,315,unknown,,,,,unknown,2026-05-05
+Q96R45,OR2A7_HUMAN,OR2A7,Olfactory receptor 2A7,,310,unknown,,,,,unknown,2026-05-05
+Q96RC9,OR8B4_HUMAN,OR8B4,Olfactory receptor 8B4,,309,unknown,,,,,unknown,2026-05-05
+Q9GZK3,OR2B2_HUMAN,OR2B2,Olfactory receptor 2B2,,357,unknown,,,,,unknown,2026-05-05
+Q9H343,O51I1_HUMAN,OR51I1,Olfactory receptor 51I1,,314,unknown,,,,,unknown,2026-05-05
+Q9H346,O52D1_HUMAN,OR52D1,Olfactory receptor 52D1,,318,unknown,,,,,unknown,2026-05-05
+Q9NZP5,O5AC2_HUMAN,OR5AC2,Olfactory receptor 5AC2,,309,unknown,,,,,unknown,2026-05-05
+Q9UGF5,O14J1_HUMAN,OR14J1,Olfactory receptor 14J1,,321,unknown,,,,,unknown,2026-05-05
+Q9Y5P0,O51B4_HUMAN,OR51B4,Olfactory receptor 51B4,,310,unknown,,,,,unknown,2026-05-05
+A6NHA9,O4C46_HUMAN,OR4C46,Olfactory receptor 4C46,,309,unknown,,,,,unknown,2026-05-05
+A6NJZ3,O6C65_HUMAN,OR6C65,Olfactory receptor 6C65,,312,unknown,,,,,unknown,2026-05-05
+A6NL08,O6C75_HUMAN,OR6C75,Olfactory receptor 6C75,,312,unknown,,,,,unknown,2026-05-05
+B2RN74,O11HC_HUMAN,OR11H12,Olfactory receptor 11H12,,326,unknown,,,,,unknown,2026-05-05
+O43869,OR2T1_HUMAN,OR2T1,Olfactory receptor 2T1,,369,unknown,,,,,unknown,2026-05-05
+O60431,OR1I1_HUMAN,OR1I1,Olfactory receptor 1I1,,355,unknown,,,,,unknown,2026-05-05
+O76100,OR7AA_HUMAN,OR7A10,Olfactory receptor 7A10,,309,unknown,,,,,unknown,2026-05-05
+O95006,OR2F2_HUMAN,OR2F2,Olfactory receptor 2F2,,317,unknown,,,,,unknown,2026-05-05
+P0C7N1,OR8U8_HUMAN,OR8U8,Olfactory receptor 8U8,,319,unknown,,,,,unknown,2026-05-05
+P58180,OR4D2_HUMAN,OR4D2,Olfactory receptor 4D2,,307,unknown,,,,,unknown,2026-05-05
+P59922,OR2B8_HUMAN,OR2B8,Olfactory receptor 2B8,,312,unknown,,,,,unknown,2026-05-05
+Q6IF63,O52W1_HUMAN,OR52W1,Olfactory receptor 52W1,,320,unknown,,,,,unknown,2026-05-05
+Q6IF82,O4A47_HUMAN,OR4A47,Olfactory receptor 4A47,,309,unknown,,,,,unknown,2026-05-05
+Q6UXT6,OR9H1_HUMAN,OR9H1,Olfactory receptor OR9H1,,308,unknown,,,,,unknown,2026-05-05
+Q8N148,OR6V1_HUMAN,OR6V1,Olfactory receptor 6V1,,313,unknown,,,,,unknown,2026-05-05
+Q8NG75,OR5T1_HUMAN,OR5T1,Olfactory receptor 5T1,,326,unknown,,,,,unknown,2026-05-05
+Q8NG76,O2T33_HUMAN,OR2T33,Olfactory receptor 2T33,,320,unknown,,,,,unknown,2026-05-05
+Q8NGC4,O10G3_HUMAN,OR10G3,Olfactory receptor 10G3,,313,unknown,,,,,unknown,2026-05-05
+Q8NGF3,O51D1_HUMAN,OR51D1,Olfactory receptor 51D1,,324,unknown,,,,,unknown,2026-05-05
+Q8NGF8,OR4B1_HUMAN,OR4B1,Olfactory receptor 4B1,,309,unknown,,,,,unknown,2026-05-05
+Q8NGG0,OR8J3_HUMAN,OR8J3,Olfactory receptor 8J3,,315,unknown,,,,,unknown,2026-05-05
+Q8NGG3,OR5T3_HUMAN,OR5T3,Olfactory receptor 5T3,,340,unknown,,,,,unknown,2026-05-05
+Q8NGG6,OR8BC_HUMAN,OR8B12,Olfactory receptor 8B12,,310,unknown,,,,,unknown,2026-05-05
+Q8NGI3,O56B1_HUMAN,OR56B1,Olfactory receptor 56B1,,324,unknown,,,,,unknown,2026-05-05
+Q8NGJ0,OR5A1_HUMAN,OR5A1,Olfactory receptor 5A1,,315,unknown,,,,,unknown,2026-05-05
+Q8NGK3,O52K2_HUMAN,OR52K2,Olfactory receptor 52K2,,314,unknown,,,,,unknown,2026-05-05
+Q8NGK5,O52M1_HUMAN,OR52M1,Olfactory receptor 52M1,,317,unknown,,,,,unknown,2026-05-05
+Q8NGK9,OR5DG_HUMAN,OR5D16,Olfactory receptor 5D16,,328,unknown,,,,,unknown,2026-05-05
+Q8NGL1,OR5DI_HUMAN,OR5D18,Olfactory receptor 5D18,,313,unknown,,,,,unknown,2026-05-05
+Q8NGM8,OR6M1_HUMAN,OR6M1,Olfactory receptor 6M1,,313,unknown,,,,,unknown,2026-05-05
+Q8NGN6,O10G7_HUMAN,OR10G7,Olfactory receptor 10G7,,311,unknown,,,,,unknown,2026-05-05
+Q8NGQ5,OR9Q1_HUMAN,OR9Q1,Olfactory receptor 9Q1,,310,unknown,,,,,unknown,2026-05-05
+Q8NGR8,OR1L8_HUMAN,OR1L8,Olfactory receptor 1L8,,309,unknown,,,,,unknown,2026-05-05
+Q8NGS6,O13C3_HUMAN,OR13C3,Olfactory receptor 13C3,,347,unknown,,,,,unknown,2026-05-05
+Q8NGT5,OR9A2_HUMAN,OR9A2,Olfactory receptor 9A2,,310,unknown,,,,,unknown,2026-05-05
+Q8NGX8,OR6Y1_HUMAN,OR6Y1,Olfactory receptor 6Y1,,325,unknown,,,,,unknown,2026-05-05
+Q8NGY6,OR6N2_HUMAN,OR6N2,Olfactory receptor 6N2,,317,unknown,,,,,unknown,2026-05-05
+Q8NGY7,O10J6_HUMAN,OR10J6P,Putative olfactory receptor 10J6,,276,unknown,,,,,unknown,2026-05-05
+Q8NGZ9,O2T10_HUMAN,OR2T10,Olfactory receptor 2T10,,312,unknown,,,,,unknown,2026-05-05
+Q8NH00,OR2T4_HUMAN,OR2T4,Olfactory receptor 2T4,,348,unknown,,,,,unknown,2026-05-05
+Q8NH05,OR4Q3_HUMAN,OR4Q3,Olfactory receptor 4Q3,,313,unknown,,,,,unknown,2026-05-05
+Q8NH16,OR2L2_HUMAN,OR2L2,Olfactory receptor 2L2,,312,unknown,,,,,unknown,2026-05-05
+Q8NH57,O52P1_HUMAN,OR52P1,Olfactory receptor 52P1,,321,unknown,,,,,unknown,2026-05-05
+Q8NH74,O10A6_HUMAN,OR10A6,Olfactory receptor 10A6,,314,unknown,,,,,unknown,2026-05-05
+Q8NH76,O56B4_HUMAN,OR56B4,Olfactory receptor 56B4,,319,unknown,,,,,unknown,2026-05-05
+Q8NH80,O10D3_HUMAN,OR10D3,Olfactory receptor 10D3,,312,unknown,,,,,unknown,2026-05-05
+Q8NH93,OR1L3_HUMAN,OR1L3,Olfactory receptor 1L3,,324,unknown,,,,,unknown,2026-05-05
+Q8NH95,O13C6_HUMAN,OR13C6P,Putative olfactory receptor 13C6,,151,unknown,,,,,unknown,2026-05-05
+Q8NHA4,O2AE1_HUMAN,OR2AE1,Olfactory receptor 2AE1,,323,unknown,,,,,unknown,2026-05-05
+Q8NHB1,OR2V1_HUMAN,OR2V1,Olfactory receptor 2V1,,315,unknown,,,,,unknown,2026-05-05
+Q8NHC6,O14L1_HUMAN,OR14L1,Olfactory receptor 14L1,,325,unknown,,,,,unknown,2026-05-05
+Q96LB0,MRGX3_HUMAN,MRGPRX3,Mas-related G-protein coupled receptor member X3,,322,orphan,,158,MRGPRX3,1,orphan,2026-05-05
+Q96R67,OR4CC_HUMAN,OR4C12,Olfactory receptor 4C12,,309,unknown,,,,,unknown,2026-05-05
+Q96R72,OR4K3_HUMAN,OR4K3,Olfactory receptor 4K3,,315,unknown,,,,,unknown,2026-05-05
+Q96RD1,OR6C1_HUMAN,OR6C1,Olfactory receptor 6C1,,312,unknown,,,,,unknown,2026-05-05
+Q99679,GPR21_HUMAN,GPR21,Probable G-protein coupled receptor 21,,349,orphan,,92,GPR21,1,orphan,2026-05-05
+Q9H2C5,O52A5_HUMAN,OR52A5,Olfactory receptor 52A5,,316,unknown,,,,,unknown,2026-05-05
+Q9P1P5,TAAR2_HUMAN,TAAR2,Trace amine-associated receptor 2,,351,unknown,Ligand-binding causes a conformation change that triggers signaling via the G(s)-class of G-proteins which activate adenylate cyclase,167,TAAR2,1,orphan,2026-05-05
+P0C7N5,OR8U9_HUMAN,OR8U9,Olfactory receptor 8U9,,309,unknown,,,,,unknown,2026-05-05
+P0C7N8,OR9G9_HUMAN,OR9G9,Olfactory receptor 9G9,,305,unknown,,,,,unknown,2026-05-05
+P0DTE0,T2R36_HUMAN,TAS2R36,Putative taste receptor type 2 member 36,,309,unknown,,,,,unknown,2026-05-05
+A0A0X1KG70,ORM2B_HUMAN,OR4M2B,Olfactory receptor 4M2B,,313,unknown,,,,,unknown,2026-05-05
+P0DSN6,T2R33_HUMAN,TAS2R33,Putative taste receptor type 2 member 33,,309,unknown,,,,,unknown,2026-05-05
+Q8NH21,OR4F5_HUMAN,OR4F5,Olfactory receptor 4F5,,305,unknown,,,,,unknown,2026-05-05
+A0A096LPK9,ORN4C_HUMAN,OR4N4C,Olfactory receptor 4N4C,,316,unknown,,,,,unknown,2026-05-05
