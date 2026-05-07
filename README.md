@@ -1,6 +1,8 @@
 # Leveraging Agentic AI towards the study of "undruggable" receptors.
 
-In this project, I leveraged the ability for AI to rapidly compile and deploy code to study the evolution of GPCRs, which are the **most clinically relevant targets to treat disease**. I focused on orphan GPCRs, which are receptors thought to be "undruggable". I started by searching SwissProt (protein database) for full sequences of human GPCRs. Then, I deployed multiple multiple sequence alignment (MSA) algorithms to construct a phylogenetic tree -- *this is the advantage of agentic AI* -- without it, I could not have implemented multiple MSAs in parallel to study evolutionary relationships.
+In this project, I leveraged the ability for AI to rapidly compile and deploy code to study the evolution of GPCRs, which are the **most clinically relevant targets to treat disease**. I focused on orphan GPCRs, which are receptors thought to be "undruggable". I started by searching SwissProt (protein database) for full sequences of human GPCRs. Then, I deployed multiple multiple sequence alignment (MSA) algorithms to construct a phylogenetic tree -- *this is the advantage of agentic AI* -- without it, I could not have implemented multiple MSAs in parallel to study evolutionary relationships. 
+
+In parallel, I attempted to use txGemma to predict ligands for each orphan receptor. To do this, though, I first wanted to validate the ability for txGemma to predict ligand affinities for GPCRs with a well-characterized pharmacology. From a preliminary screen, txGemma performed poorly in predicting the affinities for GPCR-ligand pairs. Next steps involve re-visiting my implementation of txGemma, and fine-tuning the model on a dataset which contains experimentally validated ligand-receptor affinities. 
 
 <img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/9ead57be-6fab-46a4-8c3f-b6dbbe3656ef" />
 
