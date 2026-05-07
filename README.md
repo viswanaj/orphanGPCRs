@@ -12,7 +12,7 @@ In parallel, I attempted to use txGemma to predict ligands for each orphan recep
 <img width="1100" height="1100" alt="image" src="https://github.com/user-attachments/assets/0be6ee16-5535-4a86-829e-5fa981b4964b" />
 
 
-**Observation 1** Orphan GPCRs seems to have evolved in bursts. This make sense for two reasons. I will not explain why (right now, at least). 
+**Observation 1** Orphan GPCRs seems to have evolved in bursts. This make sense for two reasons. I am still investigating these punctuated evolutionary bursts. 
 
 **Observation 2** The so-called "unknown" GPCRs are largely olfactory GPCRs. They are rich and an expansive group of proteins. 
 
