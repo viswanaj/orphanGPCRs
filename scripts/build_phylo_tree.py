@@ -5,7 +5,7 @@ Maximum-likelihood phylogenetic tree of human GPCRs.
 Pipeline
 --------
 1. Load sequences from gpcr_sequences.db → FASTA
-2. MAFFT (--auto) multiple sequence alignment
+2. Multiple sequence alignment (MAFFT | MUSCLE | Clustal Omega | Kalign)
 3. VeryFastTree (WAG + Gamma) → Newick tree
 4. Biopython: midpoint-root
 5. Circular cladogram layout → interactive plotly HTML
@@ -13,13 +13,17 @@ Pipeline
 
 Outputs  (all in gpcr_sequence_db/)
 -------
-  gpcr.fasta        raw sequences
-  gpcr.msa          MAFFT alignment
-  gpcr.nwk          ML Newick tree
-  gpcr_tree.html    interactive circular cladogram
+  gpcr.fasta                       raw sequences
+  gpcr.msa / gpcr.{aligner}.msa    alignment
+  gpcr.nwk / gpcr.{aligner}.nwk    ML Newick tree
+  gpcr_tree.html / gpcr_tree.{aligner}.html   interactive cladogram
+
+The default aligner is MAFFT and uses the unsuffixed filenames so the original
+artefacts on disk are preserved. Pass --aligner muscle|clustalo|kalign to run
+an alternative; outputs are written with the aligner name embedded.
 """
 
-import re
+import argparse
 import sqlite3
 import subprocess
 import sys
@@ -37,12 +41,17 @@ REPO_ROOT  = Path(__file__).resolve().parent.parent
 OUT_DIR    = REPO_ROOT / "gpcr_sequence_db"
 DB_PATH    = OUT_DIR / "gpcr_sequences.db"
 FASTA_PATH = OUT_DIR / "gpcr.fasta"
-MSA_PATH   = OUT_DIR / "gpcr.msa"
-NWK_PATH   = OUT_DIR / "gpcr.nwk"
-HTML_PATH  = OUT_DIR / "gpcr_tree.html"
 
-# ── Tools ─────────────────────────────────────────────────────────────────────
-MAFFT       = "mafft"
+# ── Aligner registry ─────────────────────────────────────────────────────────
+# Each entry: pretty name + builder for the subprocess command. The runner
+# below feeds FASTA → stdout file in MSA_PATH.
+ALIGNERS = {
+    "mafft":    {"label": "MAFFT (--auto)"},
+    "muscle":   {"label": "MUSCLE v5 (-super5)"},
+    "clustalo": {"label": "Clustal Omega"},
+    "kalign":   {"label": "Kalign 3"},
+}
+
 VERYFASTTREE = "VeryFastTree"
 
 # ── Visual ────────────────────────────────────────────────────────────────────
@@ -84,37 +93,69 @@ def load_and_write_fasta() -> dict[str, dict]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 2. MAFFT
+# 2. MSA — one runner per aligner. Each writes FASTA-format alignment to msa_path.
 # ─────────────────────────────────────────────────────────────────────────────
 
-def run_mafft() -> None:
-    cmd = [MAFFT, "--auto", "--thread", "-1", "--quiet", str(FASTA_PATH)]
+def _run(cmd: list[str], stdout_path: Path | None = None, label: str = "") -> str:
+    """Run a subprocess; on failure print stderr and raise. Returns stderr text."""
     print(f"  Running: {' '.join(cmd)}")
-    with open(MSA_PATH, "w") as out:
-        result = subprocess.run(cmd, stdout=out, stderr=subprocess.PIPE, text=True)
+    if stdout_path is not None:
+        with open(stdout_path, "w") as out:
+            result = subprocess.run(cmd, stdout=out, stderr=subprocess.PIPE, text=True)
+    else:
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     if result.returncode != 0:
-        raise RuntimeError(f"MAFFT failed:\n{result.stderr}")
-    print(f"  MSA written → {MSA_PATH.name}")
+        raise RuntimeError(f"{label or cmd[0]} failed:\n{result.stderr}")
+    return result.stderr
+
+
+def run_aligner(aligner: str, fasta: Path, msa_path: Path) -> None:
+    if aligner == "mafft":
+        _run(
+            ["mafft", "--auto", "--thread", "-1", "--quiet", str(fasta)],
+            stdout_path=msa_path,
+            label="MAFFT",
+        )
+    elif aligner == "muscle":
+        # MUSCLE v5 uses subcommand syntax. -super5 scales to thousands of seqs;
+        # output is written to the path given by -output.
+        _run(
+            ["muscle", "-super5", str(fasta), "-output", str(msa_path)],
+            label="MUSCLE",
+        )
+    elif aligner == "clustalo":
+        _run(
+            [
+                "clustalo",
+                "-i", str(fasta),
+                "-o", str(msa_path),
+                "--outfmt", "fasta",
+                "--threads", "0",   # 0 = auto
+                "--force",
+            ],
+            label="Clustal Omega",
+        )
+    elif aligner == "kalign":
+        _run(
+            ["kalign", "-i", str(fasta), "-o", str(msa_path), "-f", "fasta"],
+            label="Kalign",
+        )
+    else:
+        raise ValueError(f"Unknown aligner: {aligner}")
+    print(f"  MSA written → {msa_path.name}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. VeryFastTree
 # ─────────────────────────────────────────────────────────────────────────────
 
-def run_fasttree() -> None:
-    cmd = [VERYFASTTREE, "-wag", "-gamma", str(MSA_PATH)]
-    print(f"  Running: {' '.join(cmd)}")
-    with open(NWK_PATH, "w") as out:
-        result = subprocess.run(
-            cmd, stdout=out, stderr=subprocess.PIPE, text=True
-        )
-    if result.returncode != 0:
-        raise RuntimeError(f"VeryFastTree failed:\n{result.stderr}")
-    # Print a few summary lines from stderr (FastTree logs there)
-    for line in result.stderr.splitlines()[-6:]:
+def run_fasttree(msa_path: Path, nwk_path: Path) -> None:
+    cmd = [VERYFASTTREE, "-wag", "-gamma", str(msa_path)]
+    stderr = _run(cmd, stdout_path=nwk_path, label="VeryFastTree")
+    for line in stderr.splitlines()[-6:]:
         if line.strip():
             print(f"  [VFT] {line}")
-    print(f"  Newick tree written → {NWK_PATH.name}")
+    print(f"  Newick tree written → {nwk_path.name}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -174,6 +215,7 @@ def cladogram_layout(tree: Tree) -> dict:
 def build_plotly_figure(
     tree: Tree,
     records: dict[str, dict],
+    aligner_label: str = "MAFFT (--auto)",
 ) -> go.Figure:
     """
     Circular cladogram coloured by consensus_status.
@@ -269,7 +311,7 @@ def build_plotly_figure(
         title=dict(
             text=(
                 "Human GPCR Phylogenetic Tree — ML (WAG + Γ)<br>"
-                f"<sup>{n_leaves} sequences · MAFFT + VeryFastTree · "
+                f"<sup>{n_leaves} sequences · {aligner_label} + VeryFastTree · "
                 "coloured by orphan / cognate status</sup>"
             ),
             x=0.5,
@@ -290,49 +332,85 @@ def build_plotly_figure(
 # Main
 # ─────────────────────────────────────────────────────────────────────────────
 
+def output_paths(aligner: str) -> tuple[Path, Path, Path]:
+    """
+    Return (msa, nwk, html) paths for an aligner. MAFFT keeps the original
+    unsuffixed names so existing artefacts on disk are preserved; the others
+    embed the aligner name.
+    """
+    if aligner == "mafft":
+        return (
+            OUT_DIR / "gpcr.msa",
+            OUT_DIR / "gpcr.nwk",
+            OUT_DIR / "gpcr_tree.html",
+        )
+    return (
+        OUT_DIR / f"gpcr.{aligner}.msa",
+        OUT_DIR / f"gpcr.{aligner}.nwk",
+        OUT_DIR / f"gpcr_tree.{aligner}.html",
+    )
+
+
+def run_pipeline(aligner: str, records: dict[str, dict], force: bool = False) -> None:
+    label = ALIGNERS[aligner]["label"]
+    msa_path, nwk_path, html_path = output_paths(aligner)
+
+    print(f"\n══ Aligner: {label} ══")
+
+    # 2. MSA
+    if msa_path.exists() and not force:
+        print(f"  Using cached MSA ({msa_path.name})")
+    else:
+        run_aligner(aligner, FASTA_PATH, msa_path)
+
+    # 3. Tree
+    if nwk_path.exists() and not force:
+        print(f"  Using cached tree ({nwk_path.name})")
+    else:
+        run_fasttree(msa_path, nwk_path)
+
+    # 4. Parse + root
+    tree = Phylo.read(str(nwk_path), "newick")
+    tree.root_at_midpoint()
+    n_leaves   = tree.count_terminals()
+    n_internal = len(list(tree.get_nonterminals()))
+    print(f"  Tree: {n_leaves} leaves, {n_internal} internal nodes")
+
+    # 5. Layout + plot
+    fig = build_plotly_figure(tree, records, aligner_label=label)
+    fig.write_html(str(html_path))
+    print(f"  Saved: {html_path.name}")
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n")[1])
+    parser.add_argument(
+        "--aligner",
+        choices=["mafft", "muscle", "clustalo", "kalign", "all"],
+        default="mafft",
+        help="Which MSA tool to run. 'all' runs every aligner sequentially.",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-run alignment and tree-building even if cached outputs exist.",
+    )
+    args = parser.parse_args()
+
     OUT_DIR.mkdir(exist_ok=True)
 
-    # 1. FASTA
     print("── Step 1: Writing FASTA ──")
     records = load_and_write_fasta()
 
-    # 2. MSA
-    if MSA_PATH.exists():
-        print(f"\n── Step 2: Using cached MSA ({MSA_PATH.name}) ──")
-    else:
-        print("\n── Step 2: Running MAFFT ──")
-        run_mafft()
+    aligners = list(ALIGNERS.keys()) if args.aligner == "all" else [args.aligner]
+    for aligner in aligners:
+        run_pipeline(aligner, records, force=args.force)
 
-    # 3. Tree
-    if NWK_PATH.exists():
-        print(f"\n── Step 3: Using cached tree ({NWK_PATH.name}) ──")
-    else:
-        print("\n── Step 3: Running VeryFastTree ──")
-        run_fasttree()
-
-    # 4. Parse + root
-    print("\n── Step 4: Parsing and rooting tree ──")
-    tree = Phylo.read(str(NWK_PATH), "newick")
-    tree.root_at_midpoint()
-    n_leaves  = tree.count_terminals()
-    n_internal = len(list(tree.get_nonterminals()))
-    print(f"  {n_leaves} leaves, {n_internal} internal nodes")
-
-    # 5. Layout + plot
-    print("\n── Step 5: Building circular cladogram ──")
-    fig = build_plotly_figure(tree, records)
-    fig.write_html(str(HTML_PATH))
-    print(f"  Saved: {HTML_PATH}")
-
-    print(f"""
-── Done ─────────────────────────────────────────────
-  {FASTA_PATH.name:<30} raw sequences
-  {MSA_PATH.name:<30} MAFFT alignment
-  {NWK_PATH.name:<30} ML Newick tree
-  {HTML_PATH.name:<30} interactive plot
-─────────────────────────────────────────────────────
-""")
+    print("\n── Done ─────────────────────────────────────────────")
+    for aligner in aligners:
+        _, _, html = output_paths(aligner)
+        print(f"  {aligner:<10} → {html.name}")
+    print("─────────────────────────────────────────────────────\n")
 
 
 if __name__ == "__main__":
