@@ -1,0 +1,50 @@
+# txGemma fine-tune dataset stats
+
+Total compound–target pairs: 196338
+Unique UniProts:             217
+Unique SMILES:               135178
+Held-out (excluded):         ['P14416', 'P21554', 'P28223', 'P43220']
+
+## pChEMBL distribution
+  5–6             32801
+  6–7             51262
+  7–8             53965
+  <5 (weak)       7805
+  ≥8 (strong)     50505
+
+## Score (0–1000) distribution
+  min=125  median=612  max=1000  std=157.7
+
+## Compounds per target (top 10)
+  P35372  6761
+  O43614  6119
+  P35462  6019
+  P29274  5987
+  O43613  5628
+  P34972  5625
+  P08908  5513
+  P41145  5431
+  P0DMS8  5071
+  P30542  4768
+
+## Splits
+### random
+  train  pairs=157070  targets= 217  unique_smiles=114465
+  val    pairs= 19633  targets= 208  unique_smiles= 18569
+  test   pairs= 19635  targets= 207  unique_smiles= 18537
+  target overlap train∩val=208 train∩test=207 val∩test=199
+  held-out leak check: NONE
+
+### scaffold
+  train  pairs=157070  targets= 214  unique_smiles= 99782
+  val    pairs= 19633  targets= 201  unique_smiles= 15969
+  test   pairs= 19635  targets= 194  unique_smiles= 19427
+  target overlap train∩val=199 train∩test=191 val∩test=182
+  held-out leak check: NONE
+
+### target
+  train  pairs=151509  targets= 173  unique_smiles=110141
+  val    pairs= 18360  targets=  21  unique_smiles= 17891
+  test   pairs= 26469  targets=  23  unique_smiles= 25055
+  target overlap train∩val=0 train∩test=0 val∩test=0
+  held-out leak check: NONE
