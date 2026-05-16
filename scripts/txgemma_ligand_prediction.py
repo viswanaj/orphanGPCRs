@@ -14,7 +14,7 @@ Pipeline
   Phase 1  Fetch top-N actives + top-N inactives per receptor from ChEMBL
   Phase 2  Load google/txgemma-2b-predict (MPS, bfloat16)
   Phase 3  Predict pKi for every (SMILES, sequence) pair in batches
-  Phase 4  Evaluate (Pearson R, Spearman ρ, RMSE, AUC-ROC) and write HTML report
+  Phase 4  Evaluate (Pearson R, Spearman ρ, AUC-ROC) and write HTML report
 
 Usage
 -----
@@ -228,52 +228,54 @@ def load_txgemma(hf_token: str) -> tuple:
 # Phase 3 — predict
 # ─────────────────────────────────────────────────────────────────────────────
 
+_TDC_BINDINGDB_KI_PROMPT = (
+    "Instructions: Answer the following question about drug target interactions.\n"
+    "Context: Drug-target binding is the physical interaction between a drug "
+    "and a specific biological molecule, such as a protein or enzyme. This "
+    "interaction is essential for the drug to exert its pharmacological effect. "
+    "The strength of the drug-target binding is determined by the binding "
+    "affinity, which is a measure of how tightly the drug binds to the target. "
+    "Ki is the equilibrium dissociation constant of an inhibitor. It is the "
+    "concentration of inhibitor at which half of the target binding sites are "
+    "occupied. A lower Ki value indicates a stronger binding affinity.\n"
+    "Question: Given the target amino acid sequence and compound SMILES "
+    "string, predict their normalized binding affinity Kd from 000 to 1000, "
+    "where 000 is minimum Ki and 1000 is maximum Ki.\n"
+    "Drug SMILES: {Drug SMILES}\n"
+    "Target amino acid sequence: {Target amino acid sequence}\n"
+    "Answer:"
+)
+
+
 def format_prompt(smiles: str, sequence: str) -> str:
     """
-    TDC BindingDB_Ki task format used in txGemma-predict fine-tuning.
-    Outputs pKi (−log10 Ki in M), same scale as ChEMBL pChEMBL.
+    Exact TDC BindingDB_ki prompt template that txGemma-predict was fine-tuned
+    on (fetched from google/txgemma-2b-predict::tdc_prompts.json). The model
+    emits a normalized 0–1000 score where 000 = minimum Ki (strongest binder)
+    and 1000 = maximum Ki (weakest binder). The score is NOT pKi or nM — do
+    not exponentiate or log-transform it; use rank-based metrics for evaluation.
     """
-    seq = sequence[:MAX_SEQ_LEN]   # guard against very long sequences
+    seq = sequence[:MAX_SEQ_LEN]
     return (
-        f"Drug SMILES: {smiles}\n"
-        f"Target amino acid sequence: {seq}\n\n"
-        "Task: Predict the binding affinity (pKi) of the drug to the target "
-        "as a single decimal number.\n"
-        "Answer:"
+        _TDC_BINDINGDB_KI_PROMPT
+        .replace("{Drug SMILES}", smiles)
+        .replace("{Target amino acid sequence}", seq)
     )
 
 
 def _parse_float(text: str) -> float | None:
     """
-    Extract the first positive number from generated text.
-    txGemma-predict outputs raw nM values (TDC BindingDB_Ki scale),
-    so we accept any positive float and convert to pKi later.
+    Extract the first non-negative number from generated text. TDC BindingDB_ki
+    outputs are 000–1000 normalized scores (low = strong binder).
     """
     if "Answer:" in text:
         text = text.split("Answer:")[-1]
     matches = re.findall(r"\d+(?:\.\d+)?(?:[eE][+-]?\d+)?", text)
     for m in matches:
         val = float(m)
-        if val > 0:
+        if val >= 0:
             return val
     return None
-
-
-def nm_to_pki(val: float) -> float:
-    """Convert nM affinity to pKi (−log10 Molar)."""
-    return 9.0 - np.log10(val)
-
-
-def normalize_to_pki(raw_values: list[float]) -> tuple[list[float], str]:
-    """
-    Auto-detect whether model output is already pKi or raw nM.
-    Heuristic: if median > 50, almost certainly nM scale.
-    Returns (converted_values, scale_label).
-    """
-    median = float(np.median(raw_values))
-    if median > 50:
-        return [nm_to_pki(v) for v in raw_values], "nM→pKi"
-    return raw_values, "pKi (direct)"
 
 
 def batch_predict(
@@ -319,19 +321,25 @@ def batch_predict(
 # ─────────────────────────────────────────────────────────────────────────────
 
 def compute_metrics(actual: list[float], predicted: list[float]) -> dict:
+    """
+    `actual` is pChEMBL (high = strong binder). `predicted` is the txGemma
+    0–1000 normalized score (LOW = strong binder). So a well-calibrated model
+    should produce NEGATIVE Pearson / Spearman with pChEMBL. We report signed
+    values; |ρ| is the strength of monotone signal regardless of direction.
+    For AUC we negate the score so high-score → active flips into the standard
+    convention (label=1 means active, higher score → more active).
+    """
     a = np.array(actual)
     p = np.array(predicted)
     pearson_r, pearson_p = stats.pearsonr(a, p)
     spearman_r, spearman_p = stats.spearmanr(a, p)
-    rmse = float(np.sqrt(np.mean((a - p) ** 2)))
 
-    # AUC-ROC: active ≥ 6, inactive ≤ 5  (ignore middle band)
     labels, scores = [], []
     for av, pv in zip(actual, predicted):
         if av >= ACTIVE_THRESHOLD:
-            labels.append(1); scores.append(pv)
+            labels.append(1); scores.append(-pv)   # negate: low pv = active
         elif av <= INACTIVE_THRESHOLD:
-            labels.append(0); scores.append(pv)
+            labels.append(0); scores.append(-pv)
 
     auc = roc_auc_score(labels, scores) if len(set(labels)) == 2 else float("nan")
 
@@ -340,7 +348,6 @@ def compute_metrics(actual: list[float], predicted: list[float]) -> dict:
         "pearson_p":  round(float(pearson_p), 4),
         "spearman_r": round(float(spearman_r), 3),
         "spearman_p": round(float(spearman_p), 4),
-        "rmse":       round(rmse, 3),
         "auc_roc":    round(auc, 3),
         "n":          len(actual),
     }
@@ -368,7 +375,7 @@ def build_report(result_rows: list[dict]) -> go.Figure:
     for col, rec in enumerate(receptors, start=1):
         rows = [r for r in result_rows if r["receptor"] == rec]
         actual    = [r["pchembl_value"] for r in rows]
-        predicted = [r["predicted_pki"] for r in rows]
+        predicted = [r["predicted_score"] for r in rows]
         colors    = [
             STATUS_COLOR["active"]   if a >= ACTIVE_THRESHOLD  else
             STATUS_COLOR["inactive"] if a <= INACTIVE_THRESHOLD else
@@ -381,12 +388,13 @@ def build_report(result_rows: list[dict]) -> go.Figure:
         hover = [
             f"{r['molecule_id']}<br>"
             f"Actual pChEMBL: {r['pchembl_value']:.2f}<br>"
-            f"Predicted pKi: {r['predicted_pki']:.2f}<br>"
+            f"txGemma score (0–1000): {r['predicted_score']:.1f}<br>"
             f"SMILES: {r['smiles'][:40]}…"
             for r in rows
         ]
 
-        # Scatter: actual vs predicted
+        # Scatter: pChEMBL vs txGemma score. A well-calibrated model produces
+        # a downward-sloping line (high pChEMBL ↔ low score = strong binder).
         fig.add_trace(go.Scatter(
             x=actual, y=predicted, mode="markers",
             marker=dict(color=colors, size=6, opacity=0.7),
@@ -394,34 +402,24 @@ def build_report(result_rows: list[dict]) -> go.Figure:
             name=rec, showlegend=False,
         ), row=1, col=col)
 
-        # Identity line
-        lo, hi = min(actual + predicted), max(actual + predicted)
-        fig.add_trace(go.Scatter(
-            x=[lo, hi], y=[lo, hi], mode="lines",
-            line=dict(dash="dash", color="#aaa", width=1),
-            hoverinfo="none", showlegend=False,
-        ), row=1, col=col)
-
-        # Annotation
         suffix = "" if col == 1 else str(col)
         fig.add_annotation(
             xref=f"x{suffix} domain", yref=f"y{suffix} domain",
             x=0.05, y=0.95, xanchor="left", yanchor="top",
             text=(f"R={m['pearson_r']}  ρ={m['spearman_r']}<br>"
-                  f"RMSE={m['rmse']}  AUC={m['auc_roc']}<br>"
-                  f"n={m['n']}"),
+                  f"AUC={m['auc_roc']}  n={m['n']}"),
             showarrow=False,
             font=dict(size=11),
             bgcolor="rgba(255,255,255,0.8)",
         )
 
-        # ROC curve
+        # ROC curve — negate score so higher = active (sklearn convention)
         labels, scores = [], []
         for r in rows:
             if r["pchembl_value"] >= ACTIVE_THRESHOLD:
-                labels.append(1); scores.append(r["predicted_pki"])
+                labels.append(1); scores.append(-r["predicted_score"])
             elif r["pchembl_value"] <= INACTIVE_THRESHOLD:
-                labels.append(0); scores.append(r["predicted_pki"])
+                labels.append(0); scores.append(-r["predicted_score"])
 
         if len(set(labels)) == 2:
             from sklearn.metrics import roc_curve
@@ -442,7 +440,7 @@ def build_report(result_rows: list[dict]) -> go.Figure:
         title=dict(
             text=(
                 "txGemma-2b-predict — Binding Affinity Validation<br>"
-                "<sup>Predicted pKi vs ChEMBL pChEMBL · "
+                "<sup>TDC BindingDB_ki score (low=strong) vs ChEMBL pChEMBL · "
                 "red = active (≥6) · blue = inactive (≤5)</sup>"
             ),
             x=0.5,
@@ -452,8 +450,8 @@ def build_report(result_rows: list[dict]) -> go.Figure:
         template="plotly_white",
     )
     for col in range(1, n + 1):
-        fig.update_xaxes(title_text="Actual pChEMBL", row=1, col=col)
-        fig.update_yaxes(title_text="Predicted pKi",  row=1, col=col)
+        fig.update_xaxes(title_text="Actual pChEMBL",        row=1, col=col)
+        fig.update_yaxes(title_text="txGemma score (0–1000)", row=1, col=col)
         fig.update_xaxes(title_text="FPR", row=2, col=col)
         fig.update_yaxes(title_text="TPR", row=2, col=col)
 
@@ -473,11 +471,22 @@ def load_sequences_from_db() -> dict[str, str]:
     return {r[0]: r[1] for r in rows}
 
 
+def get_hf_token() -> str:
+    """HF_TOKEN env > ~/.cache/huggingface/token > getpass."""
+    tok = os.environ.get("HF_TOKEN")
+    if tok:
+        return tok
+    cached = Path.home() / ".cache" / "huggingface" / "token"
+    if cached.exists():
+        tok = cached.read_text().strip()
+        if tok:
+            return tok
+    import getpass
+    return getpass.getpass("HuggingFace token: ")
+
+
 def main() -> None:
-    hf_token = os.environ.get("HF_TOKEN")
-    if not hf_token:
-        import getpass
-        hf_token = getpass.getpass("HuggingFace token: ")
+    hf_token = get_hf_token()
 
     # ── Phase 1: ChEMBL ───────────────────────────────────────────────────
     print("── Phase 1: Fetching ChEMBL ligands ──")
@@ -493,40 +502,28 @@ def main() -> None:
     print("\n── Phase 3: Running predictions ──")
     predictions = batch_predict(model, tokenizer, device, ligand_rows)
 
-    # Attach raw predictions; skip rows where parsing failed
-    raw_parsed = []
+    result_rows: list[dict] = []
     n_failed = 0
     for row, pred in zip(ligand_rows, predictions):
         if pred is None:
             n_failed += 1
             continue
-        raw_parsed.append({**row, "_raw_pred": pred})
+        result_rows.append({**row, "predicted_score": pred})
 
-    print(f"  {len(raw_parsed)} predictions parsed  ({n_failed} unparseable)")
-
-    if not raw_parsed:
+    print(f"  {len(result_rows)} predictions parsed  ({n_failed} unparseable)")
+    if not result_rows:
         print("  ERROR: no parseable predictions. Check model output format.")
         return
 
-    # Auto-detect scale (nM vs pKi) and normalise to pKi
-    raw_vals = [r["_raw_pred"] for r in raw_parsed]
-    converted, scale_label = normalize_to_pki(raw_vals)
-    print(f"  Scale detected: {scale_label}  "
-          f"(raw median={float(np.median(raw_vals)):.1f})")
-
-    result_rows = []
-    for row, pki in zip(raw_parsed, converted):
-        result_rows.append({
-            **{k: v for k, v in row.items() if k != "_raw_pred"},
-            "raw_model_output": row["_raw_pred"],
-            "predicted_pki": pki,
-        })
+    scores = np.array([r["predicted_score"] for r in result_rows])
+    print(f"  Score range: min={scores.min():.1f}  median={np.median(scores):.1f}  "
+          f"max={scores.max():.1f}  std={scores.std():.2f}  "
+          f"distinct={len(set(scores))}/{len(scores)}")
 
     with open(PREDS_CSV, "w", newline="") as f:
         fields = [
             "receptor", "gpcr_class", "uniprot", "molecule_id",
-            "smiles", "pchembl_value", "assay_type",
-            "raw_model_output", "predicted_pki",
+            "smiles", "pchembl_value", "assay_type", "predicted_score",
         ]
         writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()
@@ -535,18 +532,18 @@ def main() -> None:
 
     # ── Phase 4: Evaluate + report ────────────────────────────────────────
     print("\n── Phase 4: Evaluating ──")
-    print(f"{'Receptor':10s}  {'R':>6}  {'ρ':>6}  {'RMSE':>6}  {'AUC':>6}  n")
+    print(f"{'Receptor':10s}  {'R':>6}  {'ρ':>6}  {'AUC':>6}  n")
     for rec in VALIDATION_TARGETS:
         rows = [r for r in result_rows if r["receptor"] == rec]
         if not rows:
             continue
         m = compute_metrics(
             [r["pchembl_value"] for r in rows],
-            [r["predicted_pki"] for r in rows],
+            [r["predicted_score"] for r in rows],
         )
         print(
-            f"{rec:10s}  {m['pearson_r']:>6.3f}  {m['spearman_r']:>6.3f}  "
-            f"{m['rmse']:>6.3f}  {m['auc_roc']:>6.3f}  {m['n']}"
+            f"{rec:10s}  {m['pearson_r']:>+6.3f}  {m['spearman_r']:>+6.3f}  "
+            f"{m['auc_roc']:>6.3f}  {m['n']}"
         )
 
     if not result_rows:

@@ -1,0 +1,73 @@
+{
+  "seed": 42,
+  "fractions": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "held_out_uniprots": [
+    "P14416",
+    "P21554",
+    "P28223",
+    "P43220"
+  ],
+  "score_mapping": {
+    "formula": "1000 * (1 - (pChEMBL - floor) / (ceil - floor))",
+    "floor": 4.0,
+    "ceil": 12.0,
+    "direction": "low score = strong binder (TDC BindingDB_ki convention)"
+  },
+  "splits": {
+    "random": {
+      "train": {
+        "n_pairs": 157070,
+        "n_targets": 217,
+        "n_smiles": 114465
+      },
+      "val": {
+        "n_pairs": 19633,
+        "n_targets": 208,
+        "n_smiles": 18569
+      },
+      "test": {
+        "n_pairs": 19635,
+        "n_targets": 207,
+        "n_smiles": 18537
+      }
+    },
+    "scaffold": {
+      "train": {
+        "n_pairs": 157070,
+        "n_targets": 214,
+        "n_smiles": 99782
+      },
+      "val": {
+        "n_pairs": 19633,
+        "n_targets": 201,
+        "n_smiles": 15969
+      },
+      "test": {
+        "n_pairs": 19635,
+        "n_targets": 194,
+        "n_smiles": 19427
+      }
+    },
+    "target": {
+      "train": {
+        "n_pairs": 151509,
+        "n_targets": 173,
+        "n_smiles": 110141
+      },
+      "val": {
+        "n_pairs": 18360,
+        "n_targets": 21,
+        "n_smiles": 17891
+      },
+      "test": {
+        "n_pairs": 26469,
+        "n_targets": 23,
+        "n_smiles": 25055
+      }
+    }
+  }
+}

@@ -6,9 +6,19 @@ gpcr_sequence_db/*.fasta
 gpcr_sequence_db/*.msa
 gpcr_sequence_db/txgemma/
 
+# txGemma fine-tuning: regeneratable data (cache, split CSVs, model weights).
+# Keep PLAN.md, dataset_stats.txt, split_metadata.json, and reports/*.txt|csv.
+gpcr_sequence_db/txgemma-finetune/data/.cache/
+gpcr_sequence_db/txgemma-finetune/data/all_pairs.csv
+gpcr_sequence_db/txgemma-finetune/data/*_split/*.csv
+gpcr_sequence_db/txgemma-finetune/adapter/
+
 # Commit these small / useful data files:
 #   gpcr_sequences.csv  (metadata, no sequences)
 #   gpcr.nwk            (Newick tree, 25 KB)
+
+# Local Claude Code settings
+.claude/
 
 # Python
 __pycache__/
