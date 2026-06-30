@@ -4,7 +4,6 @@ gpcr_sequence_db/*.db
 gpcr_sequence_db/*.html
 gpcr_sequence_db/*.fasta
 gpcr_sequence_db/*.msa
-gpcr_sequence_db/txgemma/
 
 # Commit these small / useful data files:
 #   gpcr_sequences.csv  (metadata, no sequences)
