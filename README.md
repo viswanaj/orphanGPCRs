@@ -20,3 +20,4 @@ This analysis reveals that orphan GPCRs evolved in "bursts" - there are period o
 
 **Note 2** I ultimately did employ multiple MSA algorithms to assess how feasible the "burst" phenomenon is, and it seems to be conserved across several different kinds of alignment algorithms. However, in informal terms, this phenomenon may merely be an artifact of the alignment algorithms themselves; Whenever two (or more) sequences are, to a similar degree, not readily related to a given clade of receptor, the algorithm may group these sequences into their own distinct clade...which would then give the appearance of a "burst" of orphan receptors. I will need to investigate this further. 
 
+_Currently, am investigating several computational approaches to understand the extent to which it may be possible to drug orphan GPCRs (held in private repo for the sake of protecting my own IP). _
